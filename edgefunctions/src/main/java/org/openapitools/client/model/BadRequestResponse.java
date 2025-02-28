@@ -39,7 +39,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -51,29 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * BadRequestResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class BadRequestResponse {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
-  private List<String> name;
+  @javax.annotation.Nullable
+  private List<String> name = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
-  private List<String> active;
+  @javax.annotation.Nullable
+  private List<String> active = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
-  private List<String> code;
+  @javax.annotation.Nullable
+  private List<String> code = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
-  private List<String> language;
+  @javax.annotation.Nullable
+  private List<String> language = new ArrayList<>();
 
   public BadRequestResponse() {
   }
 
-  public BadRequestResponse name(List<String> name) {
-    
+  public BadRequestResponse name(@javax.annotation.Nullable List<String> name) {
     this.name = name;
     return this;
   }
@@ -86,23 +88,21 @@ public class BadRequestResponse {
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getName() {
     return name;
   }
 
-
-  public void setName(List<String> name) {
+  public void setName(@javax.annotation.Nullable List<String> name) {
     this.name = name;
   }
 
 
-  public BadRequestResponse active(List<String> active) {
-    
+  public BadRequestResponse active(@javax.annotation.Nullable List<String> active) {
     this.active = active;
     return this;
   }
@@ -115,23 +115,21 @@ public class BadRequestResponse {
     return this;
   }
 
-   /**
+  /**
    * Get active
    * @return active
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getActive() {
     return active;
   }
 
-
-  public void setActive(List<String> active) {
+  public void setActive(@javax.annotation.Nullable List<String> active) {
     this.active = active;
   }
 
 
-  public BadRequestResponse code(List<String> code) {
-    
+  public BadRequestResponse code(@javax.annotation.Nullable List<String> code) {
     this.code = code;
     return this;
   }
@@ -144,23 +142,21 @@ public class BadRequestResponse {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getCode() {
     return code;
   }
 
-
-  public void setCode(List<String> code) {
+  public void setCode(@javax.annotation.Nullable List<String> code) {
     this.code = code;
   }
 
 
-  public BadRequestResponse language(List<String> language) {
-    
+  public BadRequestResponse language(@javax.annotation.Nullable List<String> language) {
     this.language = language;
     return this;
   }
@@ -173,17 +169,16 @@ public class BadRequestResponse {
     return this;
   }
 
-   /**
+  /**
    * Get language
    * @return language
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getLanguage() {
     return language;
   }
 
-
-  public void setLanguage(List<String> language) {
+  public void setLanguage(@javax.annotation.Nullable List<String> language) {
     this.language = language;
   }
 
@@ -248,12 +243,12 @@ public class BadRequestResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to BadRequestResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to BadRequestResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!BadRequestResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -316,22 +311,22 @@ public class BadRequestResponse {
     }
   }
 
- /**
-  * Create an instance of BadRequestResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of BadRequestResponse
-  * @throws IOException if the JSON string is invalid with respect to BadRequestResponse
-  */
+  /**
+   * Create an instance of BadRequestResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of BadRequestResponse
+   * @throws IOException if the JSON string is invalid with respect to BadRequestResponse
+   */
   public static BadRequestResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, BadRequestResponse.class);
   }
 
- /**
-  * Convert an instance of BadRequestResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of BadRequestResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,307 +49,295 @@ import org.openapitools.client.JSON;
 /**
  * Results
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class Results {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private Long id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
+  @javax.annotation.Nullable
   private String language;
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nullable
   private String code;
 
   public static final String SERIALIZED_NAME_JSON_ARGS = "json_args";
   @SerializedName(SERIALIZED_NAME_JSON_ARGS)
+  @javax.annotation.Nullable
   private Object jsonArgs = null;
 
   public static final String SERIALIZED_NAME_FUNCTION_TO_RUN = "function_to_run";
   @SerializedName(SERIALIZED_NAME_FUNCTION_TO_RUN)
+  @javax.annotation.Nullable
   private String functionToRun;
 
   public static final String SERIALIZED_NAME_INITIATOR_TYPE = "initiator_type";
   @SerializedName(SERIALIZED_NAME_INITIATOR_TYPE)
+  @javax.annotation.Nullable
   private String initiatorType;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean active;
 
   public static final String SERIALIZED_NAME_LAST_EDITOR = "last_editor";
   @SerializedName(SERIALIZED_NAME_LAST_EDITOR)
+  @javax.annotation.Nullable
   private String lastEditor;
 
   public static final String SERIALIZED_NAME_MODIFIED = "modified";
   @SerializedName(SERIALIZED_NAME_MODIFIED)
+  @javax.annotation.Nullable
   private String modified;
 
   public static final String SERIALIZED_NAME_REFERENCE_COUNT = "reference_count";
   @SerializedName(SERIALIZED_NAME_REFERENCE_COUNT)
+  @javax.annotation.Nullable
   private Long referenceCount;
 
   public static final String SERIALIZED_NAME_IS_PROPRIETARY_CODE = "is_proprietary_code";
   @SerializedName(SERIALIZED_NAME_IS_PROPRIETARY_CODE)
+  @javax.annotation.Nullable
   private Boolean isProprietaryCode;
 
   public Results() {
   }
 
-  public Results id(Long id) {
-    
+  public Results id(@javax.annotation.Nullable Long id) {
     this.id = id;
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public Long getId() {
     return id;
   }
 
-
-  public void setId(Long id) {
+  public void setId(@javax.annotation.Nullable Long id) {
     this.id = id;
   }
 
 
-  public Results name(String name) {
-    
+  public Results name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   public String getName() {
     return name;
   }
 
-
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public Results language(String language) {
-    
+  public Results language(@javax.annotation.Nullable String language) {
     this.language = language;
     return this;
   }
 
-   /**
+  /**
    * Get language
    * @return language
-  **/
+   */
   @javax.annotation.Nullable
   public String getLanguage() {
     return language;
   }
 
-
-  public void setLanguage(String language) {
+  public void setLanguage(@javax.annotation.Nullable String language) {
     this.language = language;
   }
 
 
-  public Results code(String code) {
-    
+  public Results code(@javax.annotation.Nullable String code) {
     this.code = code;
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public String getCode() {
     return code;
   }
 
-
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nullable String code) {
     this.code = code;
   }
 
 
-  public Results jsonArgs(Object jsonArgs) {
-    
+  public Results jsonArgs(@javax.annotation.Nullable Object jsonArgs) {
     this.jsonArgs = jsonArgs;
     return this;
   }
 
-   /**
+  /**
    * Get jsonArgs
    * @return jsonArgs
-  **/
+   */
   @javax.annotation.Nullable
   public Object getJsonArgs() {
     return jsonArgs;
   }
 
-
-  public void setJsonArgs(Object jsonArgs) {
+  public void setJsonArgs(@javax.annotation.Nullable Object jsonArgs) {
     this.jsonArgs = jsonArgs;
   }
 
 
-  public Results functionToRun(String functionToRun) {
-    
+  public Results functionToRun(@javax.annotation.Nullable String functionToRun) {
     this.functionToRun = functionToRun;
     return this;
   }
 
-   /**
+  /**
    * Get functionToRun
    * @return functionToRun
-  **/
+   */
   @javax.annotation.Nullable
   public String getFunctionToRun() {
     return functionToRun;
   }
 
-
-  public void setFunctionToRun(String functionToRun) {
+  public void setFunctionToRun(@javax.annotation.Nullable String functionToRun) {
     this.functionToRun = functionToRun;
   }
 
 
-  public Results initiatorType(String initiatorType) {
-    
+  public Results initiatorType(@javax.annotation.Nullable String initiatorType) {
     this.initiatorType = initiatorType;
     return this;
   }
 
-   /**
+  /**
    * Get initiatorType
    * @return initiatorType
-  **/
+   */
   @javax.annotation.Nullable
   public String getInitiatorType() {
     return initiatorType;
   }
 
-
-  public void setInitiatorType(String initiatorType) {
+  public void setInitiatorType(@javax.annotation.Nullable String initiatorType) {
     this.initiatorType = initiatorType;
   }
 
 
-  public Results active(Boolean active) {
-    
+  public Results active(@javax.annotation.Nullable Boolean active) {
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * Get active
    * @return active
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getActive() {
     return active;
   }
 
-
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nullable Boolean active) {
     this.active = active;
   }
 
 
-  public Results lastEditor(String lastEditor) {
-    
+  public Results lastEditor(@javax.annotation.Nullable String lastEditor) {
     this.lastEditor = lastEditor;
     return this;
   }
 
-   /**
+  /**
    * Get lastEditor
    * @return lastEditor
-  **/
+   */
   @javax.annotation.Nullable
   public String getLastEditor() {
     return lastEditor;
   }
 
-
-  public void setLastEditor(String lastEditor) {
+  public void setLastEditor(@javax.annotation.Nullable String lastEditor) {
     this.lastEditor = lastEditor;
   }
 
 
-  public Results modified(String modified) {
-    
+  public Results modified(@javax.annotation.Nullable String modified) {
     this.modified = modified;
     return this;
   }
 
-   /**
+  /**
    * Get modified
    * @return modified
-  **/
+   */
   @javax.annotation.Nullable
   public String getModified() {
     return modified;
   }
 
-
-  public void setModified(String modified) {
+  public void setModified(@javax.annotation.Nullable String modified) {
     this.modified = modified;
   }
 
 
-  public Results referenceCount(Long referenceCount) {
-    
+  public Results referenceCount(@javax.annotation.Nullable Long referenceCount) {
     this.referenceCount = referenceCount;
     return this;
   }
 
-   /**
+  /**
    * Get referenceCount
    * @return referenceCount
-  **/
+   */
   @javax.annotation.Nullable
   public Long getReferenceCount() {
     return referenceCount;
   }
 
-
-  public void setReferenceCount(Long referenceCount) {
+  public void setReferenceCount(@javax.annotation.Nullable Long referenceCount) {
     this.referenceCount = referenceCount;
   }
 
 
-  public Results isProprietaryCode(Boolean isProprietaryCode) {
-    
+  public Results isProprietaryCode(@javax.annotation.Nullable Boolean isProprietaryCode) {
     this.isProprietaryCode = isProprietaryCode;
     return this;
   }
 
-   /**
+  /**
    * Get isProprietaryCode
    * @return isProprietaryCode
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsProprietaryCode() {
     return isProprietaryCode;
   }
 
-
-  public void setIsProprietaryCode(Boolean isProprietaryCode) {
+  public void setIsProprietaryCode(@javax.annotation.Nullable Boolean isProprietaryCode) {
     this.isProprietaryCode = isProprietaryCode;
   }
 
@@ -450,12 +437,12 @@ public class Results {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to Results
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to Results
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!Results.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -523,22 +510,22 @@ public class Results {
     }
   }
 
- /**
-  * Create an instance of Results given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of Results
-  * @throws IOException if the JSON string is invalid with respect to Results
-  */
+  /**
+   * Create an instance of Results given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of Results
+   * @throws IOException if the JSON string is invalid with respect to Results
+   */
   public static Results fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, Results.class);
   }
 
- /**
-  * Convert an instance of Results to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of Results to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

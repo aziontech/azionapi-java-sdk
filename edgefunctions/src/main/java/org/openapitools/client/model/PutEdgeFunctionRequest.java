@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.jackson.nullable.JsonNullable;
+import org.openapitools.client.model.CreateEdgeFunctionRequestJsonArgs;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,22 +49,26 @@ import org.openapitools.client.JSON;
 /**
  * PutEdgeFunctionRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class PutEdgeFunctionRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nullable
   private String code;
 
   public static final String SERIALIZED_NAME_JSON_ARGS = "json_args";
   @SerializedName(SERIALIZED_NAME_JSON_ARGS)
-  private Object jsonArgs = null;
+  @javax.annotation.Nullable
+  private CreateEdgeFunctionRequestJsonArgs jsonArgs;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean active;
 
   /**
@@ -73,9 +76,9 @@ public class PutEdgeFunctionRequest {
    */
   @JsonAdapter(InitiatorTypeEnum.Adapter.class)
   public enum InitiatorTypeEnum {
-    APPLICATION("edge_application"),
+    EDGE_APPLICATION("edge_application"),
     
-    FIREWALL("edge_firewall");
+    EDGE_FIREWALL("edge_firewall");
 
     private String value;
 
@@ -113,166 +116,160 @@ public class PutEdgeFunctionRequest {
         return InitiatorTypeEnum.fromValue(value);
       }
     }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      InitiatorTypeEnum.fromValue(value);
+    }
   }
 
   public static final String SERIALIZED_NAME_INITIATOR_TYPE = "initiator_type";
   @SerializedName(SERIALIZED_NAME_INITIATOR_TYPE)
+  @javax.annotation.Nullable
   private InitiatorTypeEnum initiatorType;
 
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
+  @javax.annotation.Nullable
   private String language;
 
   public static final String SERIALIZED_NAME_IS_PROPRIETARY_CODE = "is_proprietary_code";
   @SerializedName(SERIALIZED_NAME_IS_PROPRIETARY_CODE)
+  @javax.annotation.Nullable
   private Boolean isProprietaryCode;
 
   public PutEdgeFunctionRequest() {
   }
 
-  public PutEdgeFunctionRequest name(String name) {
-    
+  public PutEdgeFunctionRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   public String getName() {
     return name;
   }
 
-
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PutEdgeFunctionRequest code(String code) {
-    
+  public PutEdgeFunctionRequest code(@javax.annotation.Nullable String code) {
     this.code = code;
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public String getCode() {
     return code;
   }
 
-
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nullable String code) {
     this.code = code;
   }
 
 
-  public PutEdgeFunctionRequest jsonArgs(Object jsonArgs) {
-    
+  public PutEdgeFunctionRequest jsonArgs(@javax.annotation.Nullable CreateEdgeFunctionRequestJsonArgs jsonArgs) {
     this.jsonArgs = jsonArgs;
     return this;
   }
 
-   /**
+  /**
    * Get jsonArgs
    * @return jsonArgs
-  **/
+   */
   @javax.annotation.Nullable
-  public Object getJsonArgs() {
+  public CreateEdgeFunctionRequestJsonArgs getJsonArgs() {
     return jsonArgs;
   }
 
-
-  public void setJsonArgs(Object jsonArgs) {
+  public void setJsonArgs(@javax.annotation.Nullable CreateEdgeFunctionRequestJsonArgs jsonArgs) {
     this.jsonArgs = jsonArgs;
   }
 
 
-  public PutEdgeFunctionRequest active(Boolean active) {
-    
+  public PutEdgeFunctionRequest active(@javax.annotation.Nullable Boolean active) {
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * Get active
    * @return active
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getActive() {
     return active;
   }
 
-
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nullable Boolean active) {
     this.active = active;
   }
 
 
-  public PutEdgeFunctionRequest initiatorType(InitiatorTypeEnum initiatorType) {
-    
+  public PutEdgeFunctionRequest initiatorType(@javax.annotation.Nullable InitiatorTypeEnum initiatorType) {
     this.initiatorType = initiatorType;
     return this;
   }
 
-   /**
+  /**
    * Get initiatorType
    * @return initiatorType
-  **/
+   */
   @javax.annotation.Nullable
   public InitiatorTypeEnum getInitiatorType() {
     return initiatorType;
   }
 
-
-  public void setInitiatorType(InitiatorTypeEnum initiatorType) {
+  public void setInitiatorType(@javax.annotation.Nullable InitiatorTypeEnum initiatorType) {
     this.initiatorType = initiatorType;
   }
 
 
-  public PutEdgeFunctionRequest language(String language) {
-    
+  public PutEdgeFunctionRequest language(@javax.annotation.Nullable String language) {
     this.language = language;
     return this;
   }
 
-   /**
+  /**
    * Get language
    * @return language
-  **/
+   */
   @javax.annotation.Nullable
   public String getLanguage() {
     return language;
   }
 
-
-  public void setLanguage(String language) {
+  public void setLanguage(@javax.annotation.Nullable String language) {
     this.language = language;
   }
 
 
-  public PutEdgeFunctionRequest isProprietaryCode(Boolean isProprietaryCode) {
-    
+  public PutEdgeFunctionRequest isProprietaryCode(@javax.annotation.Nullable Boolean isProprietaryCode) {
     this.isProprietaryCode = isProprietaryCode;
     return this;
   }
 
-   /**
+  /**
    * Get isProprietaryCode
    * @return isProprietaryCode
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsProprietaryCode() {
     return isProprietaryCode;
   }
 
-
-  public void setIsProprietaryCode(Boolean isProprietaryCode) {
+  public void setIsProprietaryCode(@javax.annotation.Nullable Boolean isProprietaryCode) {
     this.isProprietaryCode = isProprietaryCode;
   }
 
@@ -296,20 +293,9 @@ public class PutEdgeFunctionRequest {
         Objects.equals(this.isProprietaryCode, putEdgeFunctionRequest.isProprietaryCode);
   }
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
-
   @Override
   public int hashCode() {
     return Objects.hash(name, code, jsonArgs, active, initiatorType, language, isProprietaryCode);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -357,12 +343,12 @@ public class PutEdgeFunctionRequest {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PutEdgeFunctionRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PutEdgeFunctionRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PutEdgeFunctionRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -384,8 +370,16 @@ public class PutEdgeFunctionRequest {
       if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));
       }
+      // validate the optional field `json_args`
+      if (jsonObj.get("json_args") != null && !jsonObj.get("json_args").isJsonNull()) {
+        CreateEdgeFunctionRequestJsonArgs.validateJsonElement(jsonObj.get("json_args"));
+      }
       if ((jsonObj.get("initiator_type") != null && !jsonObj.get("initiator_type").isJsonNull()) && !jsonObj.get("initiator_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `initiator_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("initiator_type").toString()));
+      }
+      // validate the optional field `initiator_type`
+      if (jsonObj.get("initiator_type") != null && !jsonObj.get("initiator_type").isJsonNull()) {
+        InitiatorTypeEnum.validateJsonElement(jsonObj.get("initiator_type"));
       }
       if ((jsonObj.get("language") != null && !jsonObj.get("language").isJsonNull()) && !jsonObj.get("language").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language").toString()));
@@ -421,22 +415,22 @@ public class PutEdgeFunctionRequest {
     }
   }
 
- /**
-  * Create an instance of PutEdgeFunctionRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PutEdgeFunctionRequest
-  * @throws IOException if the JSON string is invalid with respect to PutEdgeFunctionRequest
-  */
+  /**
+   * Create an instance of PutEdgeFunctionRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PutEdgeFunctionRequest
+   * @throws IOException if the JSON string is invalid with respect to PutEdgeFunctionRequest
+   */
   public static PutEdgeFunctionRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PutEdgeFunctionRequest.class);
   }
 
- /**
-  * Convert an instance of PutEdgeFunctionRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PutEdgeFunctionRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

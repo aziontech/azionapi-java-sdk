@@ -10,7 +10,7 @@
 |**name** | **String** |  |  [optional] |
 |**language** | **String** |  |  [optional] |
 |**code** | **String** |  |  [optional] |
-|**jsonArgs** | **Object** |  |  [optional] |
+|**jsonArgs** | [**CreateEdgeFunctionRequestJsonArgs**](CreateEdgeFunctionRequestJsonArgs.md) |  |  [optional] |
 |**initiatorType** | [**InitiatorTypeEnum**](#InitiatorTypeEnum) |  |  [optional] |
 |**active** | **Boolean** |  |  [optional] |
 |**isProprietaryCode** | **Boolean** |  |  [optional] |
@@ -21,8 +21,8 @@
 
 | Name | Value |
 |---- | -----|
-| APPLICATION | &quot;edge_application&quot; |
-| FIREWALL | &quot;edge_firewall&quot; |
+| EDGE_APPLICATION | &quot;edge_application&quot; |
+| EDGE_FIREWALL | &quot;edge_firewall&quot; |
 
 
 
