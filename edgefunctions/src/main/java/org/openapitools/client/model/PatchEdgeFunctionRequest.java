@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.jackson.nullable.JsonNullable;
+import org.openapitools.client.model.CreateEdgeFunctionRequestJsonArgs;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,132 +49,127 @@ import org.openapitools.client.JSON;
 /**
  * PatchEdgeFunctionRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class PatchEdgeFunctionRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nullable
   private String code;
 
   public static final String SERIALIZED_NAME_JSON_ARGS = "json_args";
   @SerializedName(SERIALIZED_NAME_JSON_ARGS)
-  private Object jsonArgs = null;
+  @javax.annotation.Nullable
+  private CreateEdgeFunctionRequestJsonArgs jsonArgs;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean active;
 
   public static final String SERIALIZED_NAME_IS_PROPRIETARY_CODE = "is_proprietary_code";
   @SerializedName(SERIALIZED_NAME_IS_PROPRIETARY_CODE)
+  @javax.annotation.Nullable
   private Boolean isProprietaryCode;
 
   public PatchEdgeFunctionRequest() {
   }
 
-  public PatchEdgeFunctionRequest name(String name) {
-    
+  public PatchEdgeFunctionRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
 
-   /**
+  /**
    * Get name
    * @return name
-  **/
+   */
   @javax.annotation.Nullable
   public String getName() {
     return name;
   }
 
-
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PatchEdgeFunctionRequest code(String code) {
-    
+  public PatchEdgeFunctionRequest code(@javax.annotation.Nullable String code) {
     this.code = code;
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public String getCode() {
     return code;
   }
 
-
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nullable String code) {
     this.code = code;
   }
 
 
-  public PatchEdgeFunctionRequest jsonArgs(Object jsonArgs) {
-    
+  public PatchEdgeFunctionRequest jsonArgs(@javax.annotation.Nullable CreateEdgeFunctionRequestJsonArgs jsonArgs) {
     this.jsonArgs = jsonArgs;
     return this;
   }
 
-   /**
+  /**
    * Get jsonArgs
    * @return jsonArgs
-  **/
+   */
   @javax.annotation.Nullable
-  public Object getJsonArgs() {
+  public CreateEdgeFunctionRequestJsonArgs getJsonArgs() {
     return jsonArgs;
   }
 
-
-  public void setJsonArgs(Object jsonArgs) {
+  public void setJsonArgs(@javax.annotation.Nullable CreateEdgeFunctionRequestJsonArgs jsonArgs) {
     this.jsonArgs = jsonArgs;
   }
 
 
-  public PatchEdgeFunctionRequest active(Boolean active) {
-    
+  public PatchEdgeFunctionRequest active(@javax.annotation.Nullable Boolean active) {
     this.active = active;
     return this;
   }
 
-   /**
+  /**
    * Get active
    * @return active
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getActive() {
     return active;
   }
 
-
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nullable Boolean active) {
     this.active = active;
   }
 
 
-  public PatchEdgeFunctionRequest isProprietaryCode(Boolean isProprietaryCode) {
-    
+  public PatchEdgeFunctionRequest isProprietaryCode(@javax.annotation.Nullable Boolean isProprietaryCode) {
     this.isProprietaryCode = isProprietaryCode;
     return this;
   }
 
-   /**
+  /**
    * Get isProprietaryCode
    * @return isProprietaryCode
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsProprietaryCode() {
     return isProprietaryCode;
   }
 
-
-  public void setIsProprietaryCode(Boolean isProprietaryCode) {
+  public void setIsProprietaryCode(@javax.annotation.Nullable Boolean isProprietaryCode) {
     this.isProprietaryCode = isProprietaryCode;
   }
 
@@ -197,20 +191,9 @@ public class PatchEdgeFunctionRequest {
         Objects.equals(this.isProprietaryCode, patchEdgeFunctionRequest.isProprietaryCode);
   }
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
-
   @Override
   public int hashCode() {
     return Objects.hash(name, code, jsonArgs, active, isProprietaryCode);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -254,12 +237,12 @@ public class PatchEdgeFunctionRequest {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PatchEdgeFunctionRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PatchEdgeFunctionRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PatchEdgeFunctionRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -280,6 +263,10 @@ public class PatchEdgeFunctionRequest {
       }
       if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));
+      }
+      // validate the optional field `json_args`
+      if (jsonObj.get("json_args") != null && !jsonObj.get("json_args").isJsonNull()) {
+        CreateEdgeFunctionRequestJsonArgs.validateJsonElement(jsonObj.get("json_args"));
       }
   }
 
@@ -312,22 +299,22 @@ public class PatchEdgeFunctionRequest {
     }
   }
 
- /**
-  * Create an instance of PatchEdgeFunctionRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PatchEdgeFunctionRequest
-  * @throws IOException if the JSON string is invalid with respect to PatchEdgeFunctionRequest
-  */
+  /**
+   * Create an instance of PatchEdgeFunctionRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PatchEdgeFunctionRequest
+   * @throws IOException if the JSON string is invalid with respect to PatchEdgeFunctionRequest
+   */
   public static PatchEdgeFunctionRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PatchEdgeFunctionRequest.class);
   }
 
- /**
-  * Convert an instance of PatchEdgeFunctionRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PatchEdgeFunctionRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

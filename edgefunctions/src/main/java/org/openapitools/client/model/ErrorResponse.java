@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,32 +48,31 @@ import org.openapitools.client.JSON;
 /**
  * ErrorResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class ErrorResponse {
   public static final String SERIALIZED_NAME_DETAIL = "detail";
   @SerializedName(SERIALIZED_NAME_DETAIL)
+  @javax.annotation.Nullable
   private String detail;
 
   public ErrorResponse() {
   }
 
-  public ErrorResponse detail(String detail) {
-    
+  public ErrorResponse detail(@javax.annotation.Nullable String detail) {
     this.detail = detail;
     return this;
   }
 
-   /**
+  /**
    * Get detail
    * @return detail
-  **/
+   */
   @javax.annotation.Nullable
   public String getDetail() {
     return detail;
   }
 
-
-  public void setDetail(String detail) {
+  public void setDetail(@javax.annotation.Nullable String detail) {
     this.detail = detail;
   }
 
@@ -130,12 +128,12 @@ public class ErrorResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ErrorResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ErrorResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ErrorResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -185,22 +183,22 @@ public class ErrorResponse {
     }
   }
 
- /**
-  * Create an instance of ErrorResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ErrorResponse
-  * @throws IOException if the JSON string is invalid with respect to ErrorResponse
-  */
+  /**
+   * Create an instance of ErrorResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ErrorResponse
+   * @throws IOException if the JSON string is invalid with respect to ErrorResponse
+   */
   public static ErrorResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ErrorResponse.class);
   }
 
- /**
-  * Convert an instance of ErrorResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ErrorResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

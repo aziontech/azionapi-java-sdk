@@ -39,7 +39,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -51,57 +50,55 @@ import org.openapitools.client.JSON;
 /**
  * EdgeFunctionResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class EdgeFunctionResponse {
   public static final String SERIALIZED_NAME_RESULTS = "results";
   @SerializedName(SERIALIZED_NAME_RESULTS)
+  @javax.annotation.Nullable
   private Results results;
 
   public static final String SERIALIZED_NAME_SCHEMA_VERSION = "schema_version";
   @SerializedName(SERIALIZED_NAME_SCHEMA_VERSION)
+  @javax.annotation.Nullable
   private BigDecimal schemaVersion;
 
   public EdgeFunctionResponse() {
   }
 
-  public EdgeFunctionResponse results(Results results) {
-    
+  public EdgeFunctionResponse results(@javax.annotation.Nullable Results results) {
     this.results = results;
     return this;
   }
 
-   /**
+  /**
    * Get results
    * @return results
-  **/
+   */
   @javax.annotation.Nullable
   public Results getResults() {
     return results;
   }
 
-
-  public void setResults(Results results) {
+  public void setResults(@javax.annotation.Nullable Results results) {
     this.results = results;
   }
 
 
-  public EdgeFunctionResponse schemaVersion(BigDecimal schemaVersion) {
-    
+  public EdgeFunctionResponse schemaVersion(@javax.annotation.Nullable BigDecimal schemaVersion) {
     this.schemaVersion = schemaVersion;
     return this;
   }
 
-   /**
+  /**
    * Get schemaVersion
    * @return schemaVersion
-  **/
+   */
   @javax.annotation.Nullable
   public BigDecimal getSchemaVersion() {
     return schemaVersion;
   }
 
-
-  public void setSchemaVersion(BigDecimal schemaVersion) {
+  public void setSchemaVersion(@javax.annotation.Nullable BigDecimal schemaVersion) {
     this.schemaVersion = schemaVersion;
   }
 
@@ -160,12 +157,12 @@ public class EdgeFunctionResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to EdgeFunctionResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to EdgeFunctionResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!EdgeFunctionResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -216,22 +213,22 @@ public class EdgeFunctionResponse {
     }
   }
 
- /**
-  * Create an instance of EdgeFunctionResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of EdgeFunctionResponse
-  * @throws IOException if the JSON string is invalid with respect to EdgeFunctionResponse
-  */
+  /**
+   * Create an instance of EdgeFunctionResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of EdgeFunctionResponse
+   * @throws IOException if the JSON string is invalid with respect to EdgeFunctionResponse
+   */
   public static EdgeFunctionResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, EdgeFunctionResponse.class);
   }
 
- /**
-  * Convert an instance of EdgeFunctionResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of EdgeFunctionResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

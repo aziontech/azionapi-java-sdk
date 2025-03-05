@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,117 +52,113 @@ import org.openapitools.client.JSON;
 /**
  * ListEdgeFunctionResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-30T17:06:16.017714Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
 public class ListEdgeFunctionResponse {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
+  @javax.annotation.Nullable
   private Long count;
 
   public static final String SERIALIZED_NAME_TOTAL_PAGES = "total_pages";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAGES)
+  @javax.annotation.Nullable
   private Long totalPages;
 
   public static final String SERIALIZED_NAME_SCHEMA_VERSION = "schema_version";
   @SerializedName(SERIALIZED_NAME_SCHEMA_VERSION)
+  @javax.annotation.Nullable
   private Long schemaVersion;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
   private Links links;
 
   public static final String SERIALIZED_NAME_RESULTS = "results";
   @SerializedName(SERIALIZED_NAME_RESULTS)
-  private List<Results> results;
+  @javax.annotation.Nullable
+  private List<Results> results = new ArrayList<>();
 
   public ListEdgeFunctionResponse() {
   }
 
-  public ListEdgeFunctionResponse count(Long count) {
-    
+  public ListEdgeFunctionResponse count(@javax.annotation.Nullable Long count) {
     this.count = count;
     return this;
   }
 
-   /**
+  /**
    * Get count
    * @return count
-  **/
+   */
   @javax.annotation.Nullable
   public Long getCount() {
     return count;
   }
 
-
-  public void setCount(Long count) {
+  public void setCount(@javax.annotation.Nullable Long count) {
     this.count = count;
   }
 
 
-  public ListEdgeFunctionResponse totalPages(Long totalPages) {
-    
+  public ListEdgeFunctionResponse totalPages(@javax.annotation.Nullable Long totalPages) {
     this.totalPages = totalPages;
     return this;
   }
 
-   /**
+  /**
    * Get totalPages
    * @return totalPages
-  **/
+   */
   @javax.annotation.Nullable
   public Long getTotalPages() {
     return totalPages;
   }
 
-
-  public void setTotalPages(Long totalPages) {
+  public void setTotalPages(@javax.annotation.Nullable Long totalPages) {
     this.totalPages = totalPages;
   }
 
 
-  public ListEdgeFunctionResponse schemaVersion(Long schemaVersion) {
-    
+  public ListEdgeFunctionResponse schemaVersion(@javax.annotation.Nullable Long schemaVersion) {
     this.schemaVersion = schemaVersion;
     return this;
   }
 
-   /**
+  /**
    * Get schemaVersion
    * @return schemaVersion
-  **/
+   */
   @javax.annotation.Nullable
   public Long getSchemaVersion() {
     return schemaVersion;
   }
 
-
-  public void setSchemaVersion(Long schemaVersion) {
+  public void setSchemaVersion(@javax.annotation.Nullable Long schemaVersion) {
     this.schemaVersion = schemaVersion;
   }
 
 
-  public ListEdgeFunctionResponse links(Links links) {
-    
+  public ListEdgeFunctionResponse links(@javax.annotation.Nullable Links links) {
     this.links = links;
     return this;
   }
 
-   /**
+  /**
    * Get links
    * @return links
-  **/
+   */
   @javax.annotation.Nullable
   public Links getLinks() {
     return links;
   }
 
-
-  public void setLinks(Links links) {
+  public void setLinks(@javax.annotation.Nullable Links links) {
     this.links = links;
   }
 
 
-  public ListEdgeFunctionResponse results(List<Results> results) {
-    
+  public ListEdgeFunctionResponse results(@javax.annotation.Nullable List<Results> results) {
     this.results = results;
     return this;
   }
@@ -176,17 +171,16 @@ public class ListEdgeFunctionResponse {
     return this;
   }
 
-   /**
+  /**
    * Get results
    * @return results
-  **/
+   */
   @javax.annotation.Nullable
   public List<Results> getResults() {
     return results;
   }
 
-
-  public void setResults(List<Results> results) {
+  public void setResults(@javax.annotation.Nullable List<Results> results) {
     this.results = results;
   }
 
@@ -254,12 +248,12 @@ public class ListEdgeFunctionResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ListEdgeFunctionResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ListEdgeFunctionResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ListEdgeFunctionResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -324,22 +318,22 @@ public class ListEdgeFunctionResponse {
     }
   }
 
- /**
-  * Create an instance of ListEdgeFunctionResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ListEdgeFunctionResponse
-  * @throws IOException if the JSON string is invalid with respect to ListEdgeFunctionResponse
-  */
+  /**
+   * Create an instance of ListEdgeFunctionResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ListEdgeFunctionResponse
+   * @throws IOException if the JSON string is invalid with respect to ListEdgeFunctionResponse
+   */
   public static ListEdgeFunctionResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ListEdgeFunctionResponse.class);
   }
 
- /**
-  * Convert an instance of ListEdgeFunctionResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ListEdgeFunctionResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }
