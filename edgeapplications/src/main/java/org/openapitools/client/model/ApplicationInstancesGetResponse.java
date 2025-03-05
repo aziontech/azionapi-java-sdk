@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationInstancesGetResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationInstancesGetResponse {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
+  @javax.annotation.Nonnull
   private Long count;
 
   public static final String SERIALIZED_NAME_TOTAL_PAGES = "total_pages";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAGES)
+  @javax.annotation.Nonnull
   private Long totalPages;
 
   public static final String SERIALIZED_NAME_SCHEMA_VERSION = "schema_version";
   @SerializedName(SERIALIZED_NAME_SCHEMA_VERSION)
+  @javax.annotation.Nonnull
   private Long schemaVersion;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nonnull
   private ApplicationLinks links;
 
   public static final String SERIALIZED_NAME_RESULTS = "results";
   @SerializedName(SERIALIZED_NAME_RESULTS)
+  @javax.annotation.Nonnull
   private List<ApplicationInstancesResults> results = new ArrayList<>();
 
   public ApplicationInstancesGetResponse() {
   }
 
-  public ApplicationInstancesGetResponse count(Long count) {
+  public ApplicationInstancesGetResponse count(@javax.annotation.Nonnull Long count) {
     this.count = count;
     return this;
   }
@@ -92,12 +96,12 @@ public class ApplicationInstancesGetResponse {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(@javax.annotation.Nonnull Long count) {
     this.count = count;
   }
 
 
-  public ApplicationInstancesGetResponse totalPages(Long totalPages) {
+  public ApplicationInstancesGetResponse totalPages(@javax.annotation.Nonnull Long totalPages) {
     this.totalPages = totalPages;
     return this;
   }
@@ -111,12 +115,12 @@ public class ApplicationInstancesGetResponse {
     return totalPages;
   }
 
-  public void setTotalPages(Long totalPages) {
+  public void setTotalPages(@javax.annotation.Nonnull Long totalPages) {
     this.totalPages = totalPages;
   }
 
 
-  public ApplicationInstancesGetResponse schemaVersion(Long schemaVersion) {
+  public ApplicationInstancesGetResponse schemaVersion(@javax.annotation.Nonnull Long schemaVersion) {
     this.schemaVersion = schemaVersion;
     return this;
   }
@@ -130,12 +134,12 @@ public class ApplicationInstancesGetResponse {
     return schemaVersion;
   }
 
-  public void setSchemaVersion(Long schemaVersion) {
+  public void setSchemaVersion(@javax.annotation.Nonnull Long schemaVersion) {
     this.schemaVersion = schemaVersion;
   }
 
 
-  public ApplicationInstancesGetResponse links(ApplicationLinks links) {
+  public ApplicationInstancesGetResponse links(@javax.annotation.Nonnull ApplicationLinks links) {
     this.links = links;
     return this;
   }
@@ -149,12 +153,12 @@ public class ApplicationInstancesGetResponse {
     return links;
   }
 
-  public void setLinks(ApplicationLinks links) {
+  public void setLinks(@javax.annotation.Nonnull ApplicationLinks links) {
     this.links = links;
   }
 
 
-  public ApplicationInstancesGetResponse results(List<ApplicationInstancesResults> results) {
+  public ApplicationInstancesGetResponse results(@javax.annotation.Nonnull List<ApplicationInstancesResults> results) {
     this.results = results;
     return this;
   }
@@ -176,7 +180,7 @@ public class ApplicationInstancesGetResponse {
     return results;
   }
 
-  public void setResults(List<ApplicationInstancesResults> results) {
+  public void setResults(@javax.annotation.Nonnull List<ApplicationInstancesResults> results) {
     this.results = results;
   }
 

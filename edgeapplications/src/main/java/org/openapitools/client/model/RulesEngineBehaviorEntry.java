@@ -60,7 +60,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class RulesEngineBehaviorEntry extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(RulesEngineBehaviorEntry.class.getName());
 
@@ -205,6 +205,7 @@ public class RulesEngineBehaviorEntry extends AbstractOpenApiSchema {
     public RulesEngineBehaviorString getRulesEngineBehaviorString() throws ClassCastException {
         return (RulesEngineBehaviorString)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `RulesEngineBehaviorObject`. If the actual instance is not `RulesEngineBehaviorObject`,
      * the ClassCastException will be thrown.

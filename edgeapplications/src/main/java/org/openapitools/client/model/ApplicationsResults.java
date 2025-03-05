@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,40 +51,47 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationsResults
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationsResults {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private Long id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_DEBUG_RULES = "debug_rules";
   @SerializedName(SERIALIZED_NAME_DEBUG_RULES)
+  @javax.annotation.Nonnull
   private Boolean debugRules;
 
   public static final String SERIALIZED_NAME_LAST_EDITOR = "last_editor";
   @SerializedName(SERIALIZED_NAME_LAST_EDITOR)
+  @javax.annotation.Nonnull
   private String lastEditor;
 
   public static final String SERIALIZED_NAME_LAST_MODIFIED = "last_modified";
   @SerializedName(SERIALIZED_NAME_LAST_MODIFIED)
+  @javax.annotation.Nonnull
   private String lastModified;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nonnull
   private Boolean active;
 
   public static final String SERIALIZED_NAME_ORIGINS = "origins";
   @SerializedName(SERIALIZED_NAME_ORIGINS)
+  @javax.annotation.Nonnull
   private List<ApplicationOrigins> origins = new ArrayList<>();
 
   public ApplicationsResults() {
   }
 
-  public ApplicationsResults id(Long id) {
+  public ApplicationsResults id(@javax.annotation.Nonnull Long id) {
     this.id = id;
     return this;
   }
@@ -99,12 +105,12 @@ public class ApplicationsResults {
     return id;
   }
 
-  public void setId(Long id) {
+  public void setId(@javax.annotation.Nonnull Long id) {
     this.id = id;
   }
 
 
-  public ApplicationsResults name(String name) {
+  public ApplicationsResults name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -118,12 +124,12 @@ public class ApplicationsResults {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public ApplicationsResults debugRules(Boolean debugRules) {
+  public ApplicationsResults debugRules(@javax.annotation.Nonnull Boolean debugRules) {
     this.debugRules = debugRules;
     return this;
   }
@@ -137,12 +143,12 @@ public class ApplicationsResults {
     return debugRules;
   }
 
-  public void setDebugRules(Boolean debugRules) {
+  public void setDebugRules(@javax.annotation.Nonnull Boolean debugRules) {
     this.debugRules = debugRules;
   }
 
 
-  public ApplicationsResults lastEditor(String lastEditor) {
+  public ApplicationsResults lastEditor(@javax.annotation.Nonnull String lastEditor) {
     this.lastEditor = lastEditor;
     return this;
   }
@@ -156,12 +162,12 @@ public class ApplicationsResults {
     return lastEditor;
   }
 
-  public void setLastEditor(String lastEditor) {
+  public void setLastEditor(@javax.annotation.Nonnull String lastEditor) {
     this.lastEditor = lastEditor;
   }
 
 
-  public ApplicationsResults lastModified(String lastModified) {
+  public ApplicationsResults lastModified(@javax.annotation.Nonnull String lastModified) {
     this.lastModified = lastModified;
     return this;
   }
@@ -175,12 +181,12 @@ public class ApplicationsResults {
     return lastModified;
   }
 
-  public void setLastModified(String lastModified) {
+  public void setLastModified(@javax.annotation.Nonnull String lastModified) {
     this.lastModified = lastModified;
   }
 
 
-  public ApplicationsResults active(Boolean active) {
+  public ApplicationsResults active(@javax.annotation.Nonnull Boolean active) {
     this.active = active;
     return this;
   }
@@ -194,12 +200,12 @@ public class ApplicationsResults {
     return active;
   }
 
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nonnull Boolean active) {
     this.active = active;
   }
 
 
-  public ApplicationsResults origins(List<ApplicationOrigins> origins) {
+  public ApplicationsResults origins(@javax.annotation.Nonnull List<ApplicationOrigins> origins) {
     this.origins = origins;
     return this;
   }
@@ -221,7 +227,7 @@ public class ApplicationsResults {
     return origins;
   }
 
-  public void setOrigins(List<ApplicationOrigins> origins) {
+  public void setOrigins(@javax.annotation.Nonnull List<ApplicationOrigins> origins) {
     this.origins = origins;
   }
 

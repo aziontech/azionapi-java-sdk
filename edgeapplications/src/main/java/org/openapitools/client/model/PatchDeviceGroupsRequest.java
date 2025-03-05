@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * PatchDeviceGroupsRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class PatchDeviceGroupsRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_USER_AGENT = "user_agent";
   @SerializedName(SERIALIZED_NAME_USER_AGENT)
+  @javax.annotation.Nullable
   private String userAgent;
 
   public PatchDeviceGroupsRequest() {
   }
 
-  public PatchDeviceGroupsRequest name(String name) {
+  public PatchDeviceGroupsRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -76,12 +77,12 @@ public class PatchDeviceGroupsRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PatchDeviceGroupsRequest userAgent(String userAgent) {
+  public PatchDeviceGroupsRequest userAgent(@javax.annotation.Nullable String userAgent) {
     this.userAgent = userAgent;
     return this;
   }
@@ -95,7 +96,7 @@ public class PatchDeviceGroupsRequest {
     return userAgent;
   }
 
-  public void setUserAgent(String userAgent) {
+  public void setUserAgent(@javax.annotation.Nullable String userAgent) {
     this.userAgent = userAgent;
   }
 

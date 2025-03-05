@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,88 +49,107 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationPutRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationPutRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_DELIVERY_PROTOCOL = "delivery_protocol";
   @SerializedName(SERIALIZED_NAME_DELIVERY_PROTOCOL)
+  @javax.annotation.Nullable
   private String deliveryProtocol;
 
   public static final String SERIALIZED_NAME_HTTP_PORT = "http_port";
   @SerializedName(SERIALIZED_NAME_HTTP_PORT)
+  @javax.annotation.Nullable
   private Object httpPort = null;
 
   public static final String SERIALIZED_NAME_HTTPS_PORT = "https_port";
   @SerializedName(SERIALIZED_NAME_HTTPS_PORT)
+  @javax.annotation.Nullable
   private Object httpsPort = null;
 
   public static final String SERIALIZED_NAME_MINIMUM_TLS_VERSION = "minimum_tls_version";
   @SerializedName(SERIALIZED_NAME_MINIMUM_TLS_VERSION)
+  @javax.annotation.Nullable
   private String minimumTlsVersion;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean active;
 
   public static final String SERIALIZED_NAME_APPLICATION_ACCELERATION = "application_acceleration";
   @SerializedName(SERIALIZED_NAME_APPLICATION_ACCELERATION)
+  @javax.annotation.Nullable
   private Boolean applicationAcceleration;
 
   public static final String SERIALIZED_NAME_DEVICE_DETECTION = "device_detection";
   @SerializedName(SERIALIZED_NAME_DEVICE_DETECTION)
+  @javax.annotation.Nullable
   private Boolean deviceDetection;
 
   public static final String SERIALIZED_NAME_EDGE_FIREWALL = "edge_firewall";
   @SerializedName(SERIALIZED_NAME_EDGE_FIREWALL)
+  @javax.annotation.Nullable
   private Boolean edgeFirewall;
 
   public static final String SERIALIZED_NAME_EDGE_FUNCTIONS = "edge_functions";
   @SerializedName(SERIALIZED_NAME_EDGE_FUNCTIONS)
+  @javax.annotation.Nullable
   private Boolean edgeFunctions;
 
   public static final String SERIALIZED_NAME_IMAGE_OPTIMIZATION = "image_optimization";
   @SerializedName(SERIALIZED_NAME_IMAGE_OPTIMIZATION)
+  @javax.annotation.Nullable
   private Boolean imageOptimization;
 
   public static final String SERIALIZED_NAME_L2_CACHING = "l2_caching";
   @SerializedName(SERIALIZED_NAME_L2_CACHING)
+  @javax.annotation.Nullable
   private Boolean l2Caching;
 
   public static final String SERIALIZED_NAME_LOAD_BALANCER = "load_balancer";
   @SerializedName(SERIALIZED_NAME_LOAD_BALANCER)
+  @javax.annotation.Nullable
   private Boolean loadBalancer;
 
   public static final String SERIALIZED_NAME_RAW_LOGS = "raw_logs";
   @SerializedName(SERIALIZED_NAME_RAW_LOGS)
+  @javax.annotation.Nullable
   private Boolean rawLogs;
 
   public static final String SERIALIZED_NAME_WEB_APPLICATION_FIREWALL = "web_application_firewall";
   @SerializedName(SERIALIZED_NAME_WEB_APPLICATION_FIREWALL)
+  @javax.annotation.Nullable
   private Boolean webApplicationFirewall;
 
   public static final String SERIALIZED_NAME_DEBUG_RULES = "debug_rules";
   @SerializedName(SERIALIZED_NAME_DEBUG_RULES)
+  @javax.annotation.Nullable
   private Boolean debugRules;
 
   public static final String SERIALIZED_NAME_HTTP3 = "http3";
   @SerializedName(SERIALIZED_NAME_HTTP3)
+  @javax.annotation.Nullable
   private Boolean http3;
 
   public static final String SERIALIZED_NAME_WEBSOCKET = "websocket";
   @SerializedName(SERIALIZED_NAME_WEBSOCKET)
+  @javax.annotation.Nullable
   private Boolean websocket;
 
   public static final String SERIALIZED_NAME_SUPPORTED_CIPHERS = "supported_ciphers";
   @SerializedName(SERIALIZED_NAME_SUPPORTED_CIPHERS)
+  @javax.annotation.Nullable
   private String supportedCiphers;
 
   public ApplicationPutRequest() {
   }
 
-  public ApplicationPutRequest name(String name) {
+  public ApplicationPutRequest name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -145,12 +163,12 @@ public class ApplicationPutRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public ApplicationPutRequest deliveryProtocol(String deliveryProtocol) {
+  public ApplicationPutRequest deliveryProtocol(@javax.annotation.Nullable String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
     return this;
   }
@@ -164,12 +182,12 @@ public class ApplicationPutRequest {
     return deliveryProtocol;
   }
 
-  public void setDeliveryProtocol(String deliveryProtocol) {
+  public void setDeliveryProtocol(@javax.annotation.Nullable String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
   }
 
 
-  public ApplicationPutRequest httpPort(Object httpPort) {
+  public ApplicationPutRequest httpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
     return this;
   }
@@ -183,12 +201,12 @@ public class ApplicationPutRequest {
     return httpPort;
   }
 
-  public void setHttpPort(Object httpPort) {
+  public void setHttpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
   }
 
 
-  public ApplicationPutRequest httpsPort(Object httpsPort) {
+  public ApplicationPutRequest httpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
     return this;
   }
@@ -202,12 +220,12 @@ public class ApplicationPutRequest {
     return httpsPort;
   }
 
-  public void setHttpsPort(Object httpsPort) {
+  public void setHttpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
   }
 
 
-  public ApplicationPutRequest minimumTlsVersion(String minimumTlsVersion) {
+  public ApplicationPutRequest minimumTlsVersion(@javax.annotation.Nullable String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
     return this;
   }
@@ -221,12 +239,12 @@ public class ApplicationPutRequest {
     return minimumTlsVersion;
   }
 
-  public void setMinimumTlsVersion(String minimumTlsVersion) {
+  public void setMinimumTlsVersion(@javax.annotation.Nullable String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
   }
 
 
-  public ApplicationPutRequest active(Boolean active) {
+  public ApplicationPutRequest active(@javax.annotation.Nullable Boolean active) {
     this.active = active;
     return this;
   }
@@ -240,12 +258,12 @@ public class ApplicationPutRequest {
     return active;
   }
 
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nullable Boolean active) {
     this.active = active;
   }
 
 
-  public ApplicationPutRequest applicationAcceleration(Boolean applicationAcceleration) {
+  public ApplicationPutRequest applicationAcceleration(@javax.annotation.Nullable Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
     return this;
   }
@@ -259,12 +277,12 @@ public class ApplicationPutRequest {
     return applicationAcceleration;
   }
 
-  public void setApplicationAcceleration(Boolean applicationAcceleration) {
+  public void setApplicationAcceleration(@javax.annotation.Nullable Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
   }
 
 
-  public ApplicationPutRequest deviceDetection(Boolean deviceDetection) {
+  public ApplicationPutRequest deviceDetection(@javax.annotation.Nullable Boolean deviceDetection) {
     this.deviceDetection = deviceDetection;
     return this;
   }
@@ -278,12 +296,12 @@ public class ApplicationPutRequest {
     return deviceDetection;
   }
 
-  public void setDeviceDetection(Boolean deviceDetection) {
+  public void setDeviceDetection(@javax.annotation.Nullable Boolean deviceDetection) {
     this.deviceDetection = deviceDetection;
   }
 
 
-  public ApplicationPutRequest edgeFirewall(Boolean edgeFirewall) {
+  public ApplicationPutRequest edgeFirewall(@javax.annotation.Nullable Boolean edgeFirewall) {
     this.edgeFirewall = edgeFirewall;
     return this;
   }
@@ -297,12 +315,12 @@ public class ApplicationPutRequest {
     return edgeFirewall;
   }
 
-  public void setEdgeFirewall(Boolean edgeFirewall) {
+  public void setEdgeFirewall(@javax.annotation.Nullable Boolean edgeFirewall) {
     this.edgeFirewall = edgeFirewall;
   }
 
 
-  public ApplicationPutRequest edgeFunctions(Boolean edgeFunctions) {
+  public ApplicationPutRequest edgeFunctions(@javax.annotation.Nullable Boolean edgeFunctions) {
     this.edgeFunctions = edgeFunctions;
     return this;
   }
@@ -316,12 +334,12 @@ public class ApplicationPutRequest {
     return edgeFunctions;
   }
 
-  public void setEdgeFunctions(Boolean edgeFunctions) {
+  public void setEdgeFunctions(@javax.annotation.Nullable Boolean edgeFunctions) {
     this.edgeFunctions = edgeFunctions;
   }
 
 
-  public ApplicationPutRequest imageOptimization(Boolean imageOptimization) {
+  public ApplicationPutRequest imageOptimization(@javax.annotation.Nullable Boolean imageOptimization) {
     this.imageOptimization = imageOptimization;
     return this;
   }
@@ -335,12 +353,12 @@ public class ApplicationPutRequest {
     return imageOptimization;
   }
 
-  public void setImageOptimization(Boolean imageOptimization) {
+  public void setImageOptimization(@javax.annotation.Nullable Boolean imageOptimization) {
     this.imageOptimization = imageOptimization;
   }
 
 
-  public ApplicationPutRequest l2Caching(Boolean l2Caching) {
+  public ApplicationPutRequest l2Caching(@javax.annotation.Nullable Boolean l2Caching) {
     this.l2Caching = l2Caching;
     return this;
   }
@@ -354,12 +372,12 @@ public class ApplicationPutRequest {
     return l2Caching;
   }
 
-  public void setL2Caching(Boolean l2Caching) {
+  public void setL2Caching(@javax.annotation.Nullable Boolean l2Caching) {
     this.l2Caching = l2Caching;
   }
 
 
-  public ApplicationPutRequest loadBalancer(Boolean loadBalancer) {
+  public ApplicationPutRequest loadBalancer(@javax.annotation.Nullable Boolean loadBalancer) {
     this.loadBalancer = loadBalancer;
     return this;
   }
@@ -373,12 +391,12 @@ public class ApplicationPutRequest {
     return loadBalancer;
   }
 
-  public void setLoadBalancer(Boolean loadBalancer) {
+  public void setLoadBalancer(@javax.annotation.Nullable Boolean loadBalancer) {
     this.loadBalancer = loadBalancer;
   }
 
 
-  public ApplicationPutRequest rawLogs(Boolean rawLogs) {
+  public ApplicationPutRequest rawLogs(@javax.annotation.Nullable Boolean rawLogs) {
     this.rawLogs = rawLogs;
     return this;
   }
@@ -392,12 +410,12 @@ public class ApplicationPutRequest {
     return rawLogs;
   }
 
-  public void setRawLogs(Boolean rawLogs) {
+  public void setRawLogs(@javax.annotation.Nullable Boolean rawLogs) {
     this.rawLogs = rawLogs;
   }
 
 
-  public ApplicationPutRequest webApplicationFirewall(Boolean webApplicationFirewall) {
+  public ApplicationPutRequest webApplicationFirewall(@javax.annotation.Nullable Boolean webApplicationFirewall) {
     this.webApplicationFirewall = webApplicationFirewall;
     return this;
   }
@@ -411,12 +429,12 @@ public class ApplicationPutRequest {
     return webApplicationFirewall;
   }
 
-  public void setWebApplicationFirewall(Boolean webApplicationFirewall) {
+  public void setWebApplicationFirewall(@javax.annotation.Nullable Boolean webApplicationFirewall) {
     this.webApplicationFirewall = webApplicationFirewall;
   }
 
 
-  public ApplicationPutRequest debugRules(Boolean debugRules) {
+  public ApplicationPutRequest debugRules(@javax.annotation.Nullable Boolean debugRules) {
     this.debugRules = debugRules;
     return this;
   }
@@ -430,12 +448,12 @@ public class ApplicationPutRequest {
     return debugRules;
   }
 
-  public void setDebugRules(Boolean debugRules) {
+  public void setDebugRules(@javax.annotation.Nullable Boolean debugRules) {
     this.debugRules = debugRules;
   }
 
 
-  public ApplicationPutRequest http3(Boolean http3) {
+  public ApplicationPutRequest http3(@javax.annotation.Nullable Boolean http3) {
     this.http3 = http3;
     return this;
   }
@@ -449,12 +467,12 @@ public class ApplicationPutRequest {
     return http3;
   }
 
-  public void setHttp3(Boolean http3) {
+  public void setHttp3(@javax.annotation.Nullable Boolean http3) {
     this.http3 = http3;
   }
 
 
-  public ApplicationPutRequest websocket(Boolean websocket) {
+  public ApplicationPutRequest websocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
     return this;
   }
@@ -468,12 +486,12 @@ public class ApplicationPutRequest {
     return websocket;
   }
 
-  public void setWebsocket(Boolean websocket) {
+  public void setWebsocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
   }
 
 
-  public ApplicationPutRequest supportedCiphers(String supportedCiphers) {
+  public ApplicationPutRequest supportedCiphers(@javax.annotation.Nullable String supportedCiphers) {
     this.supportedCiphers = supportedCiphers;
     return this;
   }
@@ -487,7 +505,7 @@ public class ApplicationPutRequest {
     return supportedCiphers;
   }
 
-  public void setSupportedCiphers(String supportedCiphers) {
+  public void setSupportedCiphers(@javax.annotation.Nullable String supportedCiphers) {
     this.supportedCiphers = supportedCiphers;
   }
 

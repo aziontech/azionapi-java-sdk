@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateOriginsRequestAddresses
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class CreateOriginsRequestAddresses {
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nonnull
   private String address;
 
   public static final String SERIALIZED_NAME_IS_ACTIVE = "is_active";
   @SerializedName(SERIALIZED_NAME_IS_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean isActive;
 
   public static final String SERIALIZED_NAME_WEIGHT = "weight";
   @SerializedName(SERIALIZED_NAME_WEIGHT)
+  @javax.annotation.Nullable
   private Long weight;
 
   public static final String SERIALIZED_NAME_SERVER_ROLE = "server_role";
   @SerializedName(SERIALIZED_NAME_SERVER_ROLE)
+  @javax.annotation.Nullable
   private String serverRole;
 
   public CreateOriginsRequestAddresses() {
   }
 
-  public CreateOriginsRequestAddresses address(String address) {
+  public CreateOriginsRequestAddresses address(@javax.annotation.Nonnull String address) {
     this.address = address;
     return this;
   }
@@ -84,12 +87,12 @@ public class CreateOriginsRequestAddresses {
     return address;
   }
 
-  public void setAddress(String address) {
+  public void setAddress(@javax.annotation.Nonnull String address) {
     this.address = address;
   }
 
 
-  public CreateOriginsRequestAddresses isActive(Boolean isActive) {
+  public CreateOriginsRequestAddresses isActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
     return this;
   }
@@ -103,12 +106,12 @@ public class CreateOriginsRequestAddresses {
     return isActive;
   }
 
-  public void setIsActive(Boolean isActive) {
+  public void setIsActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
   }
 
 
-  public CreateOriginsRequestAddresses weight(Long weight) {
+  public CreateOriginsRequestAddresses weight(@javax.annotation.Nullable Long weight) {
     this.weight = weight;
     return this;
   }
@@ -124,12 +127,12 @@ public class CreateOriginsRequestAddresses {
     return weight;
   }
 
-  public void setWeight(Long weight) {
+  public void setWeight(@javax.annotation.Nullable Long weight) {
     this.weight = weight;
   }
 
 
-  public CreateOriginsRequestAddresses serverRole(String serverRole) {
+  public CreateOriginsRequestAddresses serverRole(@javax.annotation.Nullable String serverRole) {
     this.serverRole = serverRole;
     return this;
   }
@@ -143,7 +146,7 @@ public class CreateOriginsRequestAddresses {
     return serverRole;
   }
 
-  public void setServerRole(String serverRole) {
+  public void setServerRole(@javax.annotation.Nullable String serverRole) {
     this.serverRole = serverRole;
   }
 

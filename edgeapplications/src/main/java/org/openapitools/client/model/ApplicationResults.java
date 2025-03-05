@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,96 +48,117 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationResults
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationResults {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private Long id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nonnull
   private Boolean active;
 
   public static final String SERIALIZED_NAME_DEBUG_RULES = "debug_rules";
   @SerializedName(SERIALIZED_NAME_DEBUG_RULES)
+  @javax.annotation.Nonnull
   private Boolean debugRules;
 
   public static final String SERIALIZED_NAME_HTTP3 = "http3";
   @SerializedName(SERIALIZED_NAME_HTTP3)
+  @javax.annotation.Nonnull
   private Boolean http3;
 
   public static final String SERIALIZED_NAME_SUPPORTED_CIPHERS = "supported_ciphers";
   @SerializedName(SERIALIZED_NAME_SUPPORTED_CIPHERS)
+  @javax.annotation.Nonnull
   private String supportedCiphers;
 
   public static final String SERIALIZED_NAME_DELIVERY_PROTOCOL = "delivery_protocol";
   @SerializedName(SERIALIZED_NAME_DELIVERY_PROTOCOL)
+  @javax.annotation.Nonnull
   private String deliveryProtocol;
 
   public static final String SERIALIZED_NAME_HTTP_PORT = "http_port";
   @SerializedName(SERIALIZED_NAME_HTTP_PORT)
+  @javax.annotation.Nullable
   private Object httpPort = null;
 
   public static final String SERIALIZED_NAME_HTTPS_PORT = "https_port";
   @SerializedName(SERIALIZED_NAME_HTTPS_PORT)
+  @javax.annotation.Nullable
   private Object httpsPort = null;
 
   public static final String SERIALIZED_NAME_MINIMUM_TLS_VERSION = "minimum_tls_version";
   @SerializedName(SERIALIZED_NAME_MINIMUM_TLS_VERSION)
+  @javax.annotation.Nonnull
   private String minimumTlsVersion;
 
   public static final String SERIALIZED_NAME_APPLICATION_ACCELERATION = "application_acceleration";
   @SerializedName(SERIALIZED_NAME_APPLICATION_ACCELERATION)
+  @javax.annotation.Nonnull
   private Boolean applicationAcceleration;
 
   public static final String SERIALIZED_NAME_CACHING = "caching";
   @SerializedName(SERIALIZED_NAME_CACHING)
+  @javax.annotation.Nonnull
   private Boolean caching;
 
   public static final String SERIALIZED_NAME_DEVICE_DETECTION = "device_detection";
   @SerializedName(SERIALIZED_NAME_DEVICE_DETECTION)
+  @javax.annotation.Nonnull
   private Boolean deviceDetection;
 
   public static final String SERIALIZED_NAME_EDGE_FIREWALL = "edge_firewall";
   @SerializedName(SERIALIZED_NAME_EDGE_FIREWALL)
+  @javax.annotation.Nonnull
   private Boolean edgeFirewall;
 
   public static final String SERIALIZED_NAME_EDGE_FUNCTIONS = "edge_functions";
   @SerializedName(SERIALIZED_NAME_EDGE_FUNCTIONS)
+  @javax.annotation.Nonnull
   private Boolean edgeFunctions;
 
   public static final String SERIALIZED_NAME_IMAGE_OPTIMIZATION = "image_optimization";
   @SerializedName(SERIALIZED_NAME_IMAGE_OPTIMIZATION)
+  @javax.annotation.Nonnull
   private Boolean imageOptimization;
 
   public static final String SERIALIZED_NAME_L2_CACHING = "l2_caching";
   @SerializedName(SERIALIZED_NAME_L2_CACHING)
+  @javax.annotation.Nonnull
   private Boolean l2Caching;
 
   public static final String SERIALIZED_NAME_LOAD_BALANCER = "load_balancer";
   @SerializedName(SERIALIZED_NAME_LOAD_BALANCER)
+  @javax.annotation.Nonnull
   private Boolean loadBalancer;
 
   public static final String SERIALIZED_NAME_RAW_LOGS = "raw_logs";
   @SerializedName(SERIALIZED_NAME_RAW_LOGS)
+  @javax.annotation.Nonnull
   private Boolean rawLogs;
 
   public static final String SERIALIZED_NAME_WEB_APPLICATION_FIREWALL = "web_application_firewall";
   @SerializedName(SERIALIZED_NAME_WEB_APPLICATION_FIREWALL)
+  @javax.annotation.Nonnull
   private Boolean webApplicationFirewall;
 
   public static final String SERIALIZED_NAME_WEBSOCKET = "websocket";
   @SerializedName(SERIALIZED_NAME_WEBSOCKET)
+  @javax.annotation.Nullable
   private Boolean websocket;
 
   public ApplicationResults() {
   }
 
-  public ApplicationResults id(Long id) {
+  public ApplicationResults id(@javax.annotation.Nonnull Long id) {
     this.id = id;
     return this;
   }
@@ -152,12 +172,12 @@ public class ApplicationResults {
     return id;
   }
 
-  public void setId(Long id) {
+  public void setId(@javax.annotation.Nonnull Long id) {
     this.id = id;
   }
 
 
-  public ApplicationResults name(String name) {
+  public ApplicationResults name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -171,12 +191,12 @@ public class ApplicationResults {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public ApplicationResults active(Boolean active) {
+  public ApplicationResults active(@javax.annotation.Nonnull Boolean active) {
     this.active = active;
     return this;
   }
@@ -190,12 +210,12 @@ public class ApplicationResults {
     return active;
   }
 
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nonnull Boolean active) {
     this.active = active;
   }
 
 
-  public ApplicationResults debugRules(Boolean debugRules) {
+  public ApplicationResults debugRules(@javax.annotation.Nonnull Boolean debugRules) {
     this.debugRules = debugRules;
     return this;
   }
@@ -209,12 +229,12 @@ public class ApplicationResults {
     return debugRules;
   }
 
-  public void setDebugRules(Boolean debugRules) {
+  public void setDebugRules(@javax.annotation.Nonnull Boolean debugRules) {
     this.debugRules = debugRules;
   }
 
 
-  public ApplicationResults http3(Boolean http3) {
+  public ApplicationResults http3(@javax.annotation.Nonnull Boolean http3) {
     this.http3 = http3;
     return this;
   }
@@ -228,12 +248,12 @@ public class ApplicationResults {
     return http3;
   }
 
-  public void setHttp3(Boolean http3) {
+  public void setHttp3(@javax.annotation.Nonnull Boolean http3) {
     this.http3 = http3;
   }
 
 
-  public ApplicationResults supportedCiphers(String supportedCiphers) {
+  public ApplicationResults supportedCiphers(@javax.annotation.Nonnull String supportedCiphers) {
     this.supportedCiphers = supportedCiphers;
     return this;
   }
@@ -247,12 +267,12 @@ public class ApplicationResults {
     return supportedCiphers;
   }
 
-  public void setSupportedCiphers(String supportedCiphers) {
+  public void setSupportedCiphers(@javax.annotation.Nonnull String supportedCiphers) {
     this.supportedCiphers = supportedCiphers;
   }
 
 
-  public ApplicationResults deliveryProtocol(String deliveryProtocol) {
+  public ApplicationResults deliveryProtocol(@javax.annotation.Nonnull String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
     return this;
   }
@@ -266,12 +286,12 @@ public class ApplicationResults {
     return deliveryProtocol;
   }
 
-  public void setDeliveryProtocol(String deliveryProtocol) {
+  public void setDeliveryProtocol(@javax.annotation.Nonnull String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
   }
 
 
-  public ApplicationResults httpPort(Object httpPort) {
+  public ApplicationResults httpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
     return this;
   }
@@ -285,12 +305,12 @@ public class ApplicationResults {
     return httpPort;
   }
 
-  public void setHttpPort(Object httpPort) {
+  public void setHttpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
   }
 
 
-  public ApplicationResults httpsPort(Object httpsPort) {
+  public ApplicationResults httpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
     return this;
   }
@@ -304,12 +324,12 @@ public class ApplicationResults {
     return httpsPort;
   }
 
-  public void setHttpsPort(Object httpsPort) {
+  public void setHttpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
   }
 
 
-  public ApplicationResults minimumTlsVersion(String minimumTlsVersion) {
+  public ApplicationResults minimumTlsVersion(@javax.annotation.Nonnull String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
     return this;
   }
@@ -323,12 +343,12 @@ public class ApplicationResults {
     return minimumTlsVersion;
   }
 
-  public void setMinimumTlsVersion(String minimumTlsVersion) {
+  public void setMinimumTlsVersion(@javax.annotation.Nonnull String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
   }
 
 
-  public ApplicationResults applicationAcceleration(Boolean applicationAcceleration) {
+  public ApplicationResults applicationAcceleration(@javax.annotation.Nonnull Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
     return this;
   }
@@ -342,12 +362,12 @@ public class ApplicationResults {
     return applicationAcceleration;
   }
 
-  public void setApplicationAcceleration(Boolean applicationAcceleration) {
+  public void setApplicationAcceleration(@javax.annotation.Nonnull Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
   }
 
 
-  public ApplicationResults caching(Boolean caching) {
+  public ApplicationResults caching(@javax.annotation.Nonnull Boolean caching) {
     this.caching = caching;
     return this;
   }
@@ -361,12 +381,12 @@ public class ApplicationResults {
     return caching;
   }
 
-  public void setCaching(Boolean caching) {
+  public void setCaching(@javax.annotation.Nonnull Boolean caching) {
     this.caching = caching;
   }
 
 
-  public ApplicationResults deviceDetection(Boolean deviceDetection) {
+  public ApplicationResults deviceDetection(@javax.annotation.Nonnull Boolean deviceDetection) {
     this.deviceDetection = deviceDetection;
     return this;
   }
@@ -380,12 +400,12 @@ public class ApplicationResults {
     return deviceDetection;
   }
 
-  public void setDeviceDetection(Boolean deviceDetection) {
+  public void setDeviceDetection(@javax.annotation.Nonnull Boolean deviceDetection) {
     this.deviceDetection = deviceDetection;
   }
 
 
-  public ApplicationResults edgeFirewall(Boolean edgeFirewall) {
+  public ApplicationResults edgeFirewall(@javax.annotation.Nonnull Boolean edgeFirewall) {
     this.edgeFirewall = edgeFirewall;
     return this;
   }
@@ -399,12 +419,12 @@ public class ApplicationResults {
     return edgeFirewall;
   }
 
-  public void setEdgeFirewall(Boolean edgeFirewall) {
+  public void setEdgeFirewall(@javax.annotation.Nonnull Boolean edgeFirewall) {
     this.edgeFirewall = edgeFirewall;
   }
 
 
-  public ApplicationResults edgeFunctions(Boolean edgeFunctions) {
+  public ApplicationResults edgeFunctions(@javax.annotation.Nonnull Boolean edgeFunctions) {
     this.edgeFunctions = edgeFunctions;
     return this;
   }
@@ -418,12 +438,12 @@ public class ApplicationResults {
     return edgeFunctions;
   }
 
-  public void setEdgeFunctions(Boolean edgeFunctions) {
+  public void setEdgeFunctions(@javax.annotation.Nonnull Boolean edgeFunctions) {
     this.edgeFunctions = edgeFunctions;
   }
 
 
-  public ApplicationResults imageOptimization(Boolean imageOptimization) {
+  public ApplicationResults imageOptimization(@javax.annotation.Nonnull Boolean imageOptimization) {
     this.imageOptimization = imageOptimization;
     return this;
   }
@@ -437,12 +457,12 @@ public class ApplicationResults {
     return imageOptimization;
   }
 
-  public void setImageOptimization(Boolean imageOptimization) {
+  public void setImageOptimization(@javax.annotation.Nonnull Boolean imageOptimization) {
     this.imageOptimization = imageOptimization;
   }
 
 
-  public ApplicationResults l2Caching(Boolean l2Caching) {
+  public ApplicationResults l2Caching(@javax.annotation.Nonnull Boolean l2Caching) {
     this.l2Caching = l2Caching;
     return this;
   }
@@ -456,12 +476,12 @@ public class ApplicationResults {
     return l2Caching;
   }
 
-  public void setL2Caching(Boolean l2Caching) {
+  public void setL2Caching(@javax.annotation.Nonnull Boolean l2Caching) {
     this.l2Caching = l2Caching;
   }
 
 
-  public ApplicationResults loadBalancer(Boolean loadBalancer) {
+  public ApplicationResults loadBalancer(@javax.annotation.Nonnull Boolean loadBalancer) {
     this.loadBalancer = loadBalancer;
     return this;
   }
@@ -475,12 +495,12 @@ public class ApplicationResults {
     return loadBalancer;
   }
 
-  public void setLoadBalancer(Boolean loadBalancer) {
+  public void setLoadBalancer(@javax.annotation.Nonnull Boolean loadBalancer) {
     this.loadBalancer = loadBalancer;
   }
 
 
-  public ApplicationResults rawLogs(Boolean rawLogs) {
+  public ApplicationResults rawLogs(@javax.annotation.Nonnull Boolean rawLogs) {
     this.rawLogs = rawLogs;
     return this;
   }
@@ -494,12 +514,12 @@ public class ApplicationResults {
     return rawLogs;
   }
 
-  public void setRawLogs(Boolean rawLogs) {
+  public void setRawLogs(@javax.annotation.Nonnull Boolean rawLogs) {
     this.rawLogs = rawLogs;
   }
 
 
-  public ApplicationResults webApplicationFirewall(Boolean webApplicationFirewall) {
+  public ApplicationResults webApplicationFirewall(@javax.annotation.Nonnull Boolean webApplicationFirewall) {
     this.webApplicationFirewall = webApplicationFirewall;
     return this;
   }
@@ -513,12 +533,12 @@ public class ApplicationResults {
     return webApplicationFirewall;
   }
 
-  public void setWebApplicationFirewall(Boolean webApplicationFirewall) {
+  public void setWebApplicationFirewall(@javax.annotation.Nonnull Boolean webApplicationFirewall) {
     this.webApplicationFirewall = webApplicationFirewall;
   }
 
 
-  public ApplicationResults websocket(Boolean websocket) {
+  public ApplicationResults websocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
     return this;
   }
@@ -532,7 +552,7 @@ public class ApplicationResults {
     return websocket;
   }
 
-  public void setWebsocket(Boolean websocket) {
+  public void setWebsocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
   }
 

@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.client.model.ApplicationCreateInstanceRequestArgs;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -37,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationUpdateInstanceRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationUpdateInstanceRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_EDGE_FUNCTION_ID = "edge_function_id";
   @SerializedName(SERIALIZED_NAME_EDGE_FUNCTION_ID)
+  @javax.annotation.Nullable
   private Long edgeFunctionId;
 
   public static final String SERIALIZED_NAME_ARGS = "args";
   @SerializedName(SERIALIZED_NAME_ARGS)
-  private Object args = null;
+  @javax.annotation.Nonnull
+  private ApplicationCreateInstanceRequestArgs args;
 
   public ApplicationUpdateInstanceRequest() {
   }
 
-  public ApplicationUpdateInstanceRequest name(String name) {
+  public ApplicationUpdateInstanceRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -80,12 +83,12 @@ public class ApplicationUpdateInstanceRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public ApplicationUpdateInstanceRequest edgeFunctionId(Long edgeFunctionId) {
+  public ApplicationUpdateInstanceRequest edgeFunctionId(@javax.annotation.Nullable Long edgeFunctionId) {
     this.edgeFunctionId = edgeFunctionId;
     return this;
   }
@@ -99,12 +102,12 @@ public class ApplicationUpdateInstanceRequest {
     return edgeFunctionId;
   }
 
-  public void setEdgeFunctionId(Long edgeFunctionId) {
+  public void setEdgeFunctionId(@javax.annotation.Nullable Long edgeFunctionId) {
     this.edgeFunctionId = edgeFunctionId;
   }
 
 
-  public ApplicationUpdateInstanceRequest args(Object args) {
+  public ApplicationUpdateInstanceRequest args(@javax.annotation.Nonnull ApplicationCreateInstanceRequestArgs args) {
     this.args = args;
     return this;
   }
@@ -113,12 +116,12 @@ public class ApplicationUpdateInstanceRequest {
    * Get args
    * @return args
    */
-  @javax.annotation.Nullable
-  public Object getArgs() {
+  @javax.annotation.Nonnull
+  public ApplicationCreateInstanceRequestArgs getArgs() {
     return args;
   }
 
-  public void setArgs(Object args) {
+  public void setArgs(@javax.annotation.Nonnull ApplicationCreateInstanceRequestArgs args) {
     this.args = args;
   }
 
@@ -214,6 +217,8 @@ public class ApplicationUpdateInstanceRequest {
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
+      // validate the required field `args`
+      ApplicationCreateInstanceRequestArgs.validateJsonElement(jsonObj.get("args"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

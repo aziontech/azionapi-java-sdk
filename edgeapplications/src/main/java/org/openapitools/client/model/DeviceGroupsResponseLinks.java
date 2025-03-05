@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * DeviceGroupsResponseLinks
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class DeviceGroupsResponseLinks {
   public static final String SERIALIZED_NAME_PREVIOUS = "previous";
   @SerializedName(SERIALIZED_NAME_PREVIOUS)
+  @javax.annotation.Nullable
   private String previous;
 
   public static final String SERIALIZED_NAME_NEXT = "next";
   @SerializedName(SERIALIZED_NAME_NEXT)
+  @javax.annotation.Nullable
   private String next;
 
   public DeviceGroupsResponseLinks() {
   }
 
-  public DeviceGroupsResponseLinks previous(String previous) {
+  public DeviceGroupsResponseLinks previous(@javax.annotation.Nullable String previous) {
     this.previous = previous;
     return this;
   }
@@ -77,12 +78,12 @@ public class DeviceGroupsResponseLinks {
     return previous;
   }
 
-  public void setPrevious(String previous) {
+  public void setPrevious(@javax.annotation.Nullable String previous) {
     this.previous = previous;
   }
 
 
-  public DeviceGroupsResponseLinks next(String next) {
+  public DeviceGroupsResponseLinks next(@javax.annotation.Nullable String next) {
     this.next = next;
     return this;
   }
@@ -96,7 +97,7 @@ public class DeviceGroupsResponseLinks {
     return next;
   }
 
-  public void setNext(String next) {
+  public void setNext(@javax.annotation.Nullable String next) {
     this.next = next;
   }
 

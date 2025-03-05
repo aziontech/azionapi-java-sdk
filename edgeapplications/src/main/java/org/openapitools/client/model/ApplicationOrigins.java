@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationOrigins
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationOrigins {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_ORIGIN_TYPE = "origin_type";
   @SerializedName(SERIALIZED_NAME_ORIGIN_TYPE)
+  @javax.annotation.Nullable
   private String originType;
 
   public static final String SERIALIZED_NAME_ORIGIN_ID = "origin_id";
   @SerializedName(SERIALIZED_NAME_ORIGIN_ID)
+  @javax.annotation.Nullable
   private String originId;
 
   public ApplicationOrigins() {
   }
 
-  public ApplicationOrigins name(String name) {
+  public ApplicationOrigins name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -80,12 +82,12 @@ public class ApplicationOrigins {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public ApplicationOrigins originType(String originType) {
+  public ApplicationOrigins originType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
     return this;
   }
@@ -99,12 +101,12 @@ public class ApplicationOrigins {
     return originType;
   }
 
-  public void setOriginType(String originType) {
+  public void setOriginType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
   }
 
 
-  public ApplicationOrigins originId(String originId) {
+  public ApplicationOrigins originId(@javax.annotation.Nullable String originId) {
     this.originId = originId;
     return this;
   }
@@ -118,7 +120,7 @@ public class ApplicationOrigins {
     return originId;
   }
 
-  public void setOriginId(String originId) {
+  public void setOriginId(@javax.annotation.Nullable String originId) {
     this.originId = originId;
   }
 

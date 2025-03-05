@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,80 +49,97 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationUpdateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationUpdateRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DELIVERY_PROTOCOL = "delivery_protocol";
   @SerializedName(SERIALIZED_NAME_DELIVERY_PROTOCOL)
+  @javax.annotation.Nullable
   private String deliveryProtocol;
 
   public static final String SERIALIZED_NAME_HTTP_PORT = "http_port";
   @SerializedName(SERIALIZED_NAME_HTTP_PORT)
+  @javax.annotation.Nullable
   private Object httpPort = null;
 
   public static final String SERIALIZED_NAME_HTTPS_PORT = "https_port";
   @SerializedName(SERIALIZED_NAME_HTTPS_PORT)
+  @javax.annotation.Nullable
   private Object httpsPort = null;
 
   public static final String SERIALIZED_NAME_MINIMUM_TLS_VERSION = "minimum_tls_version";
   @SerializedName(SERIALIZED_NAME_MINIMUM_TLS_VERSION)
+  @javax.annotation.Nullable
   private String minimumTlsVersion;
 
   public static final String SERIALIZED_NAME_ACTIVE = "active";
   @SerializedName(SERIALIZED_NAME_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean active;
 
   public static final String SERIALIZED_NAME_DEBUG_RULES = "debug_rules";
   @SerializedName(SERIALIZED_NAME_DEBUG_RULES)
+  @javax.annotation.Nullable
   private Boolean debugRules;
 
   public static final String SERIALIZED_NAME_APPLICATION_ACCELERATION = "application_acceleration";
   @SerializedName(SERIALIZED_NAME_APPLICATION_ACCELERATION)
+  @javax.annotation.Nullable
   private Boolean applicationAcceleration;
 
   public static final String SERIALIZED_NAME_DEVICE_DETECTION = "device_detection";
   @SerializedName(SERIALIZED_NAME_DEVICE_DETECTION)
+  @javax.annotation.Nullable
   private Boolean deviceDetection;
 
   public static final String SERIALIZED_NAME_EDGE_FIREWALL = "edge_firewall";
   @SerializedName(SERIALIZED_NAME_EDGE_FIREWALL)
+  @javax.annotation.Nullable
   private Boolean edgeFirewall;
 
   public static final String SERIALIZED_NAME_EDGE_FUNCTIONS = "edge_functions";
   @SerializedName(SERIALIZED_NAME_EDGE_FUNCTIONS)
+  @javax.annotation.Nullable
   private Boolean edgeFunctions;
 
   public static final String SERIALIZED_NAME_IMAGE_OPTIMIZATION = "image_optimization";
   @SerializedName(SERIALIZED_NAME_IMAGE_OPTIMIZATION)
+  @javax.annotation.Nullable
   private Boolean imageOptimization;
 
   public static final String SERIALIZED_NAME_L2_CACHING = "l2_caching";
   @SerializedName(SERIALIZED_NAME_L2_CACHING)
+  @javax.annotation.Nullable
   private Boolean l2Caching;
 
   public static final String SERIALIZED_NAME_LOAD_BALANCER = "load_balancer";
   @SerializedName(SERIALIZED_NAME_LOAD_BALANCER)
+  @javax.annotation.Nullable
   private Boolean loadBalancer;
 
   public static final String SERIALIZED_NAME_RAW_LOGS = "raw_logs";
   @SerializedName(SERIALIZED_NAME_RAW_LOGS)
+  @javax.annotation.Nullable
   private Boolean rawLogs;
 
   public static final String SERIALIZED_NAME_WEB_APPLICATION_FIREWALL = "web_application_firewall";
   @SerializedName(SERIALIZED_NAME_WEB_APPLICATION_FIREWALL)
+  @javax.annotation.Nullable
   private Boolean webApplicationFirewall;
 
   public static final String SERIALIZED_NAME_WEBSOCKET = "websocket";
   @SerializedName(SERIALIZED_NAME_WEBSOCKET)
+  @javax.annotation.Nullable
   private Boolean websocket;
 
   public ApplicationUpdateRequest() {
   }
 
-  public ApplicationUpdateRequest name(String name) {
+  public ApplicationUpdateRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -137,12 +153,12 @@ public class ApplicationUpdateRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public ApplicationUpdateRequest deliveryProtocol(String deliveryProtocol) {
+  public ApplicationUpdateRequest deliveryProtocol(@javax.annotation.Nullable String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
     return this;
   }
@@ -156,12 +172,12 @@ public class ApplicationUpdateRequest {
     return deliveryProtocol;
   }
 
-  public void setDeliveryProtocol(String deliveryProtocol) {
+  public void setDeliveryProtocol(@javax.annotation.Nullable String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
   }
 
 
-  public ApplicationUpdateRequest httpPort(Object httpPort) {
+  public ApplicationUpdateRequest httpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
     return this;
   }
@@ -175,12 +191,12 @@ public class ApplicationUpdateRequest {
     return httpPort;
   }
 
-  public void setHttpPort(Object httpPort) {
+  public void setHttpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
   }
 
 
-  public ApplicationUpdateRequest httpsPort(Object httpsPort) {
+  public ApplicationUpdateRequest httpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
     return this;
   }
@@ -194,12 +210,12 @@ public class ApplicationUpdateRequest {
     return httpsPort;
   }
 
-  public void setHttpsPort(Object httpsPort) {
+  public void setHttpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
   }
 
 
-  public ApplicationUpdateRequest minimumTlsVersion(String minimumTlsVersion) {
+  public ApplicationUpdateRequest minimumTlsVersion(@javax.annotation.Nullable String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
     return this;
   }
@@ -213,12 +229,12 @@ public class ApplicationUpdateRequest {
     return minimumTlsVersion;
   }
 
-  public void setMinimumTlsVersion(String minimumTlsVersion) {
+  public void setMinimumTlsVersion(@javax.annotation.Nullable String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
   }
 
 
-  public ApplicationUpdateRequest active(Boolean active) {
+  public ApplicationUpdateRequest active(@javax.annotation.Nullable Boolean active) {
     this.active = active;
     return this;
   }
@@ -232,12 +248,12 @@ public class ApplicationUpdateRequest {
     return active;
   }
 
-  public void setActive(Boolean active) {
+  public void setActive(@javax.annotation.Nullable Boolean active) {
     this.active = active;
   }
 
 
-  public ApplicationUpdateRequest debugRules(Boolean debugRules) {
+  public ApplicationUpdateRequest debugRules(@javax.annotation.Nullable Boolean debugRules) {
     this.debugRules = debugRules;
     return this;
   }
@@ -251,12 +267,12 @@ public class ApplicationUpdateRequest {
     return debugRules;
   }
 
-  public void setDebugRules(Boolean debugRules) {
+  public void setDebugRules(@javax.annotation.Nullable Boolean debugRules) {
     this.debugRules = debugRules;
   }
 
 
-  public ApplicationUpdateRequest applicationAcceleration(Boolean applicationAcceleration) {
+  public ApplicationUpdateRequest applicationAcceleration(@javax.annotation.Nullable Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
     return this;
   }
@@ -270,12 +286,12 @@ public class ApplicationUpdateRequest {
     return applicationAcceleration;
   }
 
-  public void setApplicationAcceleration(Boolean applicationAcceleration) {
+  public void setApplicationAcceleration(@javax.annotation.Nullable Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
   }
 
 
-  public ApplicationUpdateRequest deviceDetection(Boolean deviceDetection) {
+  public ApplicationUpdateRequest deviceDetection(@javax.annotation.Nullable Boolean deviceDetection) {
     this.deviceDetection = deviceDetection;
     return this;
   }
@@ -289,12 +305,12 @@ public class ApplicationUpdateRequest {
     return deviceDetection;
   }
 
-  public void setDeviceDetection(Boolean deviceDetection) {
+  public void setDeviceDetection(@javax.annotation.Nullable Boolean deviceDetection) {
     this.deviceDetection = deviceDetection;
   }
 
 
-  public ApplicationUpdateRequest edgeFirewall(Boolean edgeFirewall) {
+  public ApplicationUpdateRequest edgeFirewall(@javax.annotation.Nullable Boolean edgeFirewall) {
     this.edgeFirewall = edgeFirewall;
     return this;
   }
@@ -308,12 +324,12 @@ public class ApplicationUpdateRequest {
     return edgeFirewall;
   }
 
-  public void setEdgeFirewall(Boolean edgeFirewall) {
+  public void setEdgeFirewall(@javax.annotation.Nullable Boolean edgeFirewall) {
     this.edgeFirewall = edgeFirewall;
   }
 
 
-  public ApplicationUpdateRequest edgeFunctions(Boolean edgeFunctions) {
+  public ApplicationUpdateRequest edgeFunctions(@javax.annotation.Nullable Boolean edgeFunctions) {
     this.edgeFunctions = edgeFunctions;
     return this;
   }
@@ -327,12 +343,12 @@ public class ApplicationUpdateRequest {
     return edgeFunctions;
   }
 
-  public void setEdgeFunctions(Boolean edgeFunctions) {
+  public void setEdgeFunctions(@javax.annotation.Nullable Boolean edgeFunctions) {
     this.edgeFunctions = edgeFunctions;
   }
 
 
-  public ApplicationUpdateRequest imageOptimization(Boolean imageOptimization) {
+  public ApplicationUpdateRequest imageOptimization(@javax.annotation.Nullable Boolean imageOptimization) {
     this.imageOptimization = imageOptimization;
     return this;
   }
@@ -346,12 +362,12 @@ public class ApplicationUpdateRequest {
     return imageOptimization;
   }
 
-  public void setImageOptimization(Boolean imageOptimization) {
+  public void setImageOptimization(@javax.annotation.Nullable Boolean imageOptimization) {
     this.imageOptimization = imageOptimization;
   }
 
 
-  public ApplicationUpdateRequest l2Caching(Boolean l2Caching) {
+  public ApplicationUpdateRequest l2Caching(@javax.annotation.Nullable Boolean l2Caching) {
     this.l2Caching = l2Caching;
     return this;
   }
@@ -365,12 +381,12 @@ public class ApplicationUpdateRequest {
     return l2Caching;
   }
 
-  public void setL2Caching(Boolean l2Caching) {
+  public void setL2Caching(@javax.annotation.Nullable Boolean l2Caching) {
     this.l2Caching = l2Caching;
   }
 
 
-  public ApplicationUpdateRequest loadBalancer(Boolean loadBalancer) {
+  public ApplicationUpdateRequest loadBalancer(@javax.annotation.Nullable Boolean loadBalancer) {
     this.loadBalancer = loadBalancer;
     return this;
   }
@@ -384,12 +400,12 @@ public class ApplicationUpdateRequest {
     return loadBalancer;
   }
 
-  public void setLoadBalancer(Boolean loadBalancer) {
+  public void setLoadBalancer(@javax.annotation.Nullable Boolean loadBalancer) {
     this.loadBalancer = loadBalancer;
   }
 
 
-  public ApplicationUpdateRequest rawLogs(Boolean rawLogs) {
+  public ApplicationUpdateRequest rawLogs(@javax.annotation.Nullable Boolean rawLogs) {
     this.rawLogs = rawLogs;
     return this;
   }
@@ -403,12 +419,12 @@ public class ApplicationUpdateRequest {
     return rawLogs;
   }
 
-  public void setRawLogs(Boolean rawLogs) {
+  public void setRawLogs(@javax.annotation.Nullable Boolean rawLogs) {
     this.rawLogs = rawLogs;
   }
 
 
-  public ApplicationUpdateRequest webApplicationFirewall(Boolean webApplicationFirewall) {
+  public ApplicationUpdateRequest webApplicationFirewall(@javax.annotation.Nullable Boolean webApplicationFirewall) {
     this.webApplicationFirewall = webApplicationFirewall;
     return this;
   }
@@ -422,12 +438,12 @@ public class ApplicationUpdateRequest {
     return webApplicationFirewall;
   }
 
-  public void setWebApplicationFirewall(Boolean webApplicationFirewall) {
+  public void setWebApplicationFirewall(@javax.annotation.Nullable Boolean webApplicationFirewall) {
     this.webApplicationFirewall = webApplicationFirewall;
   }
 
 
-  public ApplicationUpdateRequest websocket(Boolean websocket) {
+  public ApplicationUpdateRequest websocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
     return this;
   }
@@ -441,7 +457,7 @@ public class ApplicationUpdateRequest {
     return websocket;
   }
 
-  public void setWebsocket(Boolean websocket) {
+  public void setWebsocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
   }
 

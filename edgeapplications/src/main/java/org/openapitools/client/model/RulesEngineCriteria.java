@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * RulesEngineCriteria
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class RulesEngineCriteria {
   public static final String SERIALIZED_NAME_CONDITIONAL = "conditional";
   @SerializedName(SERIALIZED_NAME_CONDITIONAL)
+  @javax.annotation.Nonnull
   private String conditional;
 
   public static final String SERIALIZED_NAME_VARIABLE = "variable";
   @SerializedName(SERIALIZED_NAME_VARIABLE)
+  @javax.annotation.Nonnull
   private String variable;
 
   public static final String SERIALIZED_NAME_OPERATOR = "operator";
   @SerializedName(SERIALIZED_NAME_OPERATOR)
+  @javax.annotation.Nonnull
   private String operator;
 
   public static final String SERIALIZED_NAME_INPUT_VALUE = "input_value";
   @SerializedName(SERIALIZED_NAME_INPUT_VALUE)
+  @javax.annotation.Nullable
   private String inputValue;
 
   public RulesEngineCriteria() {
   }
 
-  public RulesEngineCriteria conditional(String conditional) {
+  public RulesEngineCriteria conditional(@javax.annotation.Nonnull String conditional) {
     this.conditional = conditional;
     return this;
   }
@@ -84,12 +87,12 @@ public class RulesEngineCriteria {
     return conditional;
   }
 
-  public void setConditional(String conditional) {
+  public void setConditional(@javax.annotation.Nonnull String conditional) {
     this.conditional = conditional;
   }
 
 
-  public RulesEngineCriteria variable(String variable) {
+  public RulesEngineCriteria variable(@javax.annotation.Nonnull String variable) {
     this.variable = variable;
     return this;
   }
@@ -103,12 +106,12 @@ public class RulesEngineCriteria {
     return variable;
   }
 
-  public void setVariable(String variable) {
+  public void setVariable(@javax.annotation.Nonnull String variable) {
     this.variable = variable;
   }
 
 
-  public RulesEngineCriteria operator(String operator) {
+  public RulesEngineCriteria operator(@javax.annotation.Nonnull String operator) {
     this.operator = operator;
     return this;
   }
@@ -122,12 +125,12 @@ public class RulesEngineCriteria {
     return operator;
   }
 
-  public void setOperator(String operator) {
+  public void setOperator(@javax.annotation.Nonnull String operator) {
     this.operator = operator;
   }
 
 
-  public RulesEngineCriteria inputValue(String inputValue) {
+  public RulesEngineCriteria inputValue(@javax.annotation.Nullable String inputValue) {
     this.inputValue = inputValue;
     return this;
   }
@@ -141,7 +144,7 @@ public class RulesEngineCriteria {
     return inputValue;
   }
 
-  public void setInputValue(String inputValue) {
+  public void setInputValue(@javax.annotation.Nullable String inputValue) {
     this.inputValue = inputValue;
   }
 

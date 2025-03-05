@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,60 +51,72 @@ import org.openapitools.client.JSON;
 /**
  * CreateOriginsRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class CreateOriginsRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_ORIGIN_TYPE = "origin_type";
   @SerializedName(SERIALIZED_NAME_ORIGIN_TYPE)
+  @javax.annotation.Nullable
   private String originType;
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
+  @javax.annotation.Nullable
   private List<CreateOriginsRequestAddresses> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORIGIN_PROTOCOL_POLICY = "origin_protocol_policy";
   @SerializedName(SERIALIZED_NAME_ORIGIN_PROTOCOL_POLICY)
+  @javax.annotation.Nullable
   private String originProtocolPolicy;
 
   public static final String SERIALIZED_NAME_HOST_HEADER = "host_header";
   @SerializedName(SERIALIZED_NAME_HOST_HEADER)
+  @javax.annotation.Nullable
   private String hostHeader;
 
   public static final String SERIALIZED_NAME_ORIGIN_PATH = "origin_path";
   @SerializedName(SERIALIZED_NAME_ORIGIN_PATH)
+  @javax.annotation.Nullable
   private String originPath;
 
   public static final String SERIALIZED_NAME_HMAC_AUTHENTICATION = "hmac_authentication";
   @SerializedName(SERIALIZED_NAME_HMAC_AUTHENTICATION)
+  @javax.annotation.Nullable
   private Boolean hmacAuthentication;
 
   public static final String SERIALIZED_NAME_HMAC_REGION_NAME = "hmac_region_name";
   @SerializedName(SERIALIZED_NAME_HMAC_REGION_NAME)
+  @javax.annotation.Nullable
   private String hmacRegionName;
 
   public static final String SERIALIZED_NAME_HMAC_ACCESS_KEY = "hmac_access_key";
   @SerializedName(SERIALIZED_NAME_HMAC_ACCESS_KEY)
+  @javax.annotation.Nullable
   private String hmacAccessKey;
 
   public static final String SERIALIZED_NAME_HMAC_SECRET_KEY = "hmac_secret_key";
   @SerializedName(SERIALIZED_NAME_HMAC_SECRET_KEY)
+  @javax.annotation.Nullable
   private String hmacSecretKey;
 
   public static final String SERIALIZED_NAME_BUCKET = "bucket";
   @SerializedName(SERIALIZED_NAME_BUCKET)
+  @javax.annotation.Nullable
   private String bucket;
 
   public static final String SERIALIZED_NAME_PREFIX = "prefix";
   @SerializedName(SERIALIZED_NAME_PREFIX)
+  @javax.annotation.Nullable
   private String prefix;
 
   public CreateOriginsRequest() {
   }
 
-  public CreateOriginsRequest name(String name) {
+  public CreateOriginsRequest name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -119,12 +130,12 @@ public class CreateOriginsRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CreateOriginsRequest originType(String originType) {
+  public CreateOriginsRequest originType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
     return this;
   }
@@ -138,12 +149,12 @@ public class CreateOriginsRequest {
     return originType;
   }
 
-  public void setOriginType(String originType) {
+  public void setOriginType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
   }
 
 
-  public CreateOriginsRequest addresses(List<CreateOriginsRequestAddresses> addresses) {
+  public CreateOriginsRequest addresses(@javax.annotation.Nullable List<CreateOriginsRequestAddresses> addresses) {
     this.addresses = addresses;
     return this;
   }
@@ -165,12 +176,12 @@ public class CreateOriginsRequest {
     return addresses;
   }
 
-  public void setAddresses(List<CreateOriginsRequestAddresses> addresses) {
+  public void setAddresses(@javax.annotation.Nullable List<CreateOriginsRequestAddresses> addresses) {
     this.addresses = addresses;
   }
 
 
-  public CreateOriginsRequest originProtocolPolicy(String originProtocolPolicy) {
+  public CreateOriginsRequest originProtocolPolicy(@javax.annotation.Nullable String originProtocolPolicy) {
     this.originProtocolPolicy = originProtocolPolicy;
     return this;
   }
@@ -184,12 +195,12 @@ public class CreateOriginsRequest {
     return originProtocolPolicy;
   }
 
-  public void setOriginProtocolPolicy(String originProtocolPolicy) {
+  public void setOriginProtocolPolicy(@javax.annotation.Nullable String originProtocolPolicy) {
     this.originProtocolPolicy = originProtocolPolicy;
   }
 
 
-  public CreateOriginsRequest hostHeader(String hostHeader) {
+  public CreateOriginsRequest hostHeader(@javax.annotation.Nullable String hostHeader) {
     this.hostHeader = hostHeader;
     return this;
   }
@@ -203,12 +214,12 @@ public class CreateOriginsRequest {
     return hostHeader;
   }
 
-  public void setHostHeader(String hostHeader) {
+  public void setHostHeader(@javax.annotation.Nullable String hostHeader) {
     this.hostHeader = hostHeader;
   }
 
 
-  public CreateOriginsRequest originPath(String originPath) {
+  public CreateOriginsRequest originPath(@javax.annotation.Nullable String originPath) {
     this.originPath = originPath;
     return this;
   }
@@ -222,12 +233,12 @@ public class CreateOriginsRequest {
     return originPath;
   }
 
-  public void setOriginPath(String originPath) {
+  public void setOriginPath(@javax.annotation.Nullable String originPath) {
     this.originPath = originPath;
   }
 
 
-  public CreateOriginsRequest hmacAuthentication(Boolean hmacAuthentication) {
+  public CreateOriginsRequest hmacAuthentication(@javax.annotation.Nullable Boolean hmacAuthentication) {
     this.hmacAuthentication = hmacAuthentication;
     return this;
   }
@@ -241,12 +252,12 @@ public class CreateOriginsRequest {
     return hmacAuthentication;
   }
 
-  public void setHmacAuthentication(Boolean hmacAuthentication) {
+  public void setHmacAuthentication(@javax.annotation.Nullable Boolean hmacAuthentication) {
     this.hmacAuthentication = hmacAuthentication;
   }
 
 
-  public CreateOriginsRequest hmacRegionName(String hmacRegionName) {
+  public CreateOriginsRequest hmacRegionName(@javax.annotation.Nullable String hmacRegionName) {
     this.hmacRegionName = hmacRegionName;
     return this;
   }
@@ -260,12 +271,12 @@ public class CreateOriginsRequest {
     return hmacRegionName;
   }
 
-  public void setHmacRegionName(String hmacRegionName) {
+  public void setHmacRegionName(@javax.annotation.Nullable String hmacRegionName) {
     this.hmacRegionName = hmacRegionName;
   }
 
 
-  public CreateOriginsRequest hmacAccessKey(String hmacAccessKey) {
+  public CreateOriginsRequest hmacAccessKey(@javax.annotation.Nullable String hmacAccessKey) {
     this.hmacAccessKey = hmacAccessKey;
     return this;
   }
@@ -279,12 +290,12 @@ public class CreateOriginsRequest {
     return hmacAccessKey;
   }
 
-  public void setHmacAccessKey(String hmacAccessKey) {
+  public void setHmacAccessKey(@javax.annotation.Nullable String hmacAccessKey) {
     this.hmacAccessKey = hmacAccessKey;
   }
 
 
-  public CreateOriginsRequest hmacSecretKey(String hmacSecretKey) {
+  public CreateOriginsRequest hmacSecretKey(@javax.annotation.Nullable String hmacSecretKey) {
     this.hmacSecretKey = hmacSecretKey;
     return this;
   }
@@ -298,12 +309,12 @@ public class CreateOriginsRequest {
     return hmacSecretKey;
   }
 
-  public void setHmacSecretKey(String hmacSecretKey) {
+  public void setHmacSecretKey(@javax.annotation.Nullable String hmacSecretKey) {
     this.hmacSecretKey = hmacSecretKey;
   }
 
 
-  public CreateOriginsRequest bucket(String bucket) {
+  public CreateOriginsRequest bucket(@javax.annotation.Nullable String bucket) {
     this.bucket = bucket;
     return this;
   }
@@ -317,12 +328,12 @@ public class CreateOriginsRequest {
     return bucket;
   }
 
-  public void setBucket(String bucket) {
+  public void setBucket(@javax.annotation.Nullable String bucket) {
     this.bucket = bucket;
   }
 
 
-  public CreateOriginsRequest prefix(String prefix) {
+  public CreateOriginsRequest prefix(@javax.annotation.Nullable String prefix) {
     this.prefix = prefix;
     return this;
   }
@@ -336,7 +347,7 @@ public class CreateOriginsRequest {
     return prefix;
   }
 
-  public void setPrefix(String prefix) {
+  public void setPrefix(@javax.annotation.Nullable String prefix) {
     this.prefix = prefix;
   }
 

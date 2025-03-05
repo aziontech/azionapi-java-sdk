@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,36 +52,42 @@ import org.openapitools.client.JSON;
 /**
  * PatchRulesEngineRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class PatchRulesEngineRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_ORDER = "order";
   @SerializedName(SERIALIZED_NAME_ORDER)
+  @javax.annotation.Nullable
   private Long order;
 
   public static final String SERIALIZED_NAME_IS_ACTIVE = "is_active";
   @SerializedName(SERIALIZED_NAME_IS_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean isActive;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_CRITERIA = "criteria";
   @SerializedName(SERIALIZED_NAME_CRITERIA)
+  @javax.annotation.Nullable
   private List<List<RulesEngineCriteria>> criteria = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_BEHAVIORS = "behaviors";
   @SerializedName(SERIALIZED_NAME_BEHAVIORS)
+  @javax.annotation.Nullable
   private List<RulesEngineBehaviorEntry> behaviors = new ArrayList<>();
 
   public PatchRulesEngineRequest() {
   }
 
-  public PatchRulesEngineRequest name(String name) {
+  public PatchRulesEngineRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -96,12 +101,12 @@ public class PatchRulesEngineRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PatchRulesEngineRequest order(Long order) {
+  public PatchRulesEngineRequest order(@javax.annotation.Nullable Long order) {
     this.order = order;
     return this;
   }
@@ -117,12 +122,12 @@ public class PatchRulesEngineRequest {
     return order;
   }
 
-  public void setOrder(Long order) {
+  public void setOrder(@javax.annotation.Nullable Long order) {
     this.order = order;
   }
 
 
-  public PatchRulesEngineRequest isActive(Boolean isActive) {
+  public PatchRulesEngineRequest isActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
     return this;
   }
@@ -136,12 +141,12 @@ public class PatchRulesEngineRequest {
     return isActive;
   }
 
-  public void setIsActive(Boolean isActive) {
+  public void setIsActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
   }
 
 
-  public PatchRulesEngineRequest description(String description) {
+  public PatchRulesEngineRequest description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -155,12 +160,12 @@ public class PatchRulesEngineRequest {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public PatchRulesEngineRequest criteria(List<List<RulesEngineCriteria>> criteria) {
+  public PatchRulesEngineRequest criteria(@javax.annotation.Nullable List<List<RulesEngineCriteria>> criteria) {
     this.criteria = criteria;
     return this;
   }
@@ -182,12 +187,12 @@ public class PatchRulesEngineRequest {
     return criteria;
   }
 
-  public void setCriteria(List<List<RulesEngineCriteria>> criteria) {
+  public void setCriteria(@javax.annotation.Nullable List<List<RulesEngineCriteria>> criteria) {
     this.criteria = criteria;
   }
 
 
-  public PatchRulesEngineRequest behaviors(List<RulesEngineBehaviorEntry> behaviors) {
+  public PatchRulesEngineRequest behaviors(@javax.annotation.Nullable List<RulesEngineBehaviorEntry> behaviors) {
     this.behaviors = behaviors;
     return this;
   }
@@ -209,7 +214,7 @@ public class PatchRulesEngineRequest {
     return behaviors;
   }
 
-  public void setBehaviors(List<RulesEngineBehaviorEntry> behaviors) {
+  public void setBehaviors(@javax.annotation.Nullable List<RulesEngineBehaviorEntry> behaviors) {
     this.behaviors = behaviors;
   }
 

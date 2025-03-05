@@ -40,7 +40,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -52,84 +51,102 @@ import org.openapitools.client.JSON;
 /**
  * OriginsResultResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class OriginsResultResponse {
   public static final String SERIALIZED_NAME_ORIGIN_ID = "origin_id";
   @SerializedName(SERIALIZED_NAME_ORIGIN_ID)
+  @javax.annotation.Nullable
   private Long originId;
 
   public static final String SERIALIZED_NAME_ORIGIN_KEY = "origin_key";
   @SerializedName(SERIALIZED_NAME_ORIGIN_KEY)
+  @javax.annotation.Nullable
   private String originKey;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_ORIGIN_TYPE = "origin_type";
   @SerializedName(SERIALIZED_NAME_ORIGIN_TYPE)
+  @javax.annotation.Nullable
   private String originType;
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
+  @javax.annotation.Nullable
   private List<OriginsResultResponseAddresses> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORIGIN_PROTOCOL_POLICY = "origin_protocol_policy";
   @SerializedName(SERIALIZED_NAME_ORIGIN_PROTOCOL_POLICY)
+  @javax.annotation.Nullable
   private String originProtocolPolicy;
 
   public static final String SERIALIZED_NAME_IS_ORIGIN_REDIRECTION_ENABLED = "is_origin_redirection_enabled";
   @SerializedName(SERIALIZED_NAME_IS_ORIGIN_REDIRECTION_ENABLED)
+  @javax.annotation.Nullable
   private Boolean isOriginRedirectionEnabled;
 
   public static final String SERIALIZED_NAME_HOST_HEADER = "host_header";
   @SerializedName(SERIALIZED_NAME_HOST_HEADER)
+  @javax.annotation.Nullable
   private String hostHeader;
 
   public static final String SERIALIZED_NAME_METHOD = "method";
   @SerializedName(SERIALIZED_NAME_METHOD)
+  @javax.annotation.Nullable
   private String method;
 
   public static final String SERIALIZED_NAME_ORIGIN_PATH = "origin_path";
   @SerializedName(SERIALIZED_NAME_ORIGIN_PATH)
+  @javax.annotation.Nullable
   private String originPath;
 
   public static final String SERIALIZED_NAME_CONNECTION_TIMEOUT = "connection_timeout";
   @SerializedName(SERIALIZED_NAME_CONNECTION_TIMEOUT)
+  @javax.annotation.Nullable
   private Long connectionTimeout;
 
   public static final String SERIALIZED_NAME_TIMEOUT_BETWEEN_BYTES = "timeout_between_bytes";
   @SerializedName(SERIALIZED_NAME_TIMEOUT_BETWEEN_BYTES)
+  @javax.annotation.Nullable
   private Long timeoutBetweenBytes;
 
   public static final String SERIALIZED_NAME_HMAC_AUTHENTICATION = "hmac_authentication";
   @SerializedName(SERIALIZED_NAME_HMAC_AUTHENTICATION)
+  @javax.annotation.Nullable
   private Boolean hmacAuthentication;
 
   public static final String SERIALIZED_NAME_HMAC_REGION_NAME = "hmac_region_name";
   @SerializedName(SERIALIZED_NAME_HMAC_REGION_NAME)
+  @javax.annotation.Nullable
   private String hmacRegionName;
 
   public static final String SERIALIZED_NAME_HMAC_ACCESS_KEY = "hmac_access_key";
   @SerializedName(SERIALIZED_NAME_HMAC_ACCESS_KEY)
+  @javax.annotation.Nullable
   private String hmacAccessKey;
 
   public static final String SERIALIZED_NAME_HMAC_SECRET_KEY = "hmac_secret_key";
   @SerializedName(SERIALIZED_NAME_HMAC_SECRET_KEY)
+  @javax.annotation.Nullable
   private String hmacSecretKey;
 
   public static final String SERIALIZED_NAME_BUCKET = "bucket";
   @SerializedName(SERIALIZED_NAME_BUCKET)
+  @javax.annotation.Nullable
   private String bucket;
 
   public static final String SERIALIZED_NAME_PREFIX = "prefix";
   @SerializedName(SERIALIZED_NAME_PREFIX)
+  @javax.annotation.Nullable
   private String prefix;
 
   public OriginsResultResponse() {
   }
 
-  public OriginsResultResponse originId(Long originId) {
+  public OriginsResultResponse originId(@javax.annotation.Nullable Long originId) {
     this.originId = originId;
     return this;
   }
@@ -143,12 +160,12 @@ public class OriginsResultResponse {
     return originId;
   }
 
-  public void setOriginId(Long originId) {
+  public void setOriginId(@javax.annotation.Nullable Long originId) {
     this.originId = originId;
   }
 
 
-  public OriginsResultResponse originKey(String originKey) {
+  public OriginsResultResponse originKey(@javax.annotation.Nullable String originKey) {
     this.originKey = originKey;
     return this;
   }
@@ -162,12 +179,12 @@ public class OriginsResultResponse {
     return originKey;
   }
 
-  public void setOriginKey(String originKey) {
+  public void setOriginKey(@javax.annotation.Nullable String originKey) {
     this.originKey = originKey;
   }
 
 
-  public OriginsResultResponse name(String name) {
+  public OriginsResultResponse name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -181,12 +198,12 @@ public class OriginsResultResponse {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public OriginsResultResponse originType(String originType) {
+  public OriginsResultResponse originType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
     return this;
   }
@@ -200,12 +217,12 @@ public class OriginsResultResponse {
     return originType;
   }
 
-  public void setOriginType(String originType) {
+  public void setOriginType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
   }
 
 
-  public OriginsResultResponse addresses(List<OriginsResultResponseAddresses> addresses) {
+  public OriginsResultResponse addresses(@javax.annotation.Nullable List<OriginsResultResponseAddresses> addresses) {
     this.addresses = addresses;
     return this;
   }
@@ -227,12 +244,12 @@ public class OriginsResultResponse {
     return addresses;
   }
 
-  public void setAddresses(List<OriginsResultResponseAddresses> addresses) {
+  public void setAddresses(@javax.annotation.Nullable List<OriginsResultResponseAddresses> addresses) {
     this.addresses = addresses;
   }
 
 
-  public OriginsResultResponse originProtocolPolicy(String originProtocolPolicy) {
+  public OriginsResultResponse originProtocolPolicy(@javax.annotation.Nullable String originProtocolPolicy) {
     this.originProtocolPolicy = originProtocolPolicy;
     return this;
   }
@@ -246,12 +263,12 @@ public class OriginsResultResponse {
     return originProtocolPolicy;
   }
 
-  public void setOriginProtocolPolicy(String originProtocolPolicy) {
+  public void setOriginProtocolPolicy(@javax.annotation.Nullable String originProtocolPolicy) {
     this.originProtocolPolicy = originProtocolPolicy;
   }
 
 
-  public OriginsResultResponse isOriginRedirectionEnabled(Boolean isOriginRedirectionEnabled) {
+  public OriginsResultResponse isOriginRedirectionEnabled(@javax.annotation.Nullable Boolean isOriginRedirectionEnabled) {
     this.isOriginRedirectionEnabled = isOriginRedirectionEnabled;
     return this;
   }
@@ -265,12 +282,12 @@ public class OriginsResultResponse {
     return isOriginRedirectionEnabled;
   }
 
-  public void setIsOriginRedirectionEnabled(Boolean isOriginRedirectionEnabled) {
+  public void setIsOriginRedirectionEnabled(@javax.annotation.Nullable Boolean isOriginRedirectionEnabled) {
     this.isOriginRedirectionEnabled = isOriginRedirectionEnabled;
   }
 
 
-  public OriginsResultResponse hostHeader(String hostHeader) {
+  public OriginsResultResponse hostHeader(@javax.annotation.Nullable String hostHeader) {
     this.hostHeader = hostHeader;
     return this;
   }
@@ -284,12 +301,12 @@ public class OriginsResultResponse {
     return hostHeader;
   }
 
-  public void setHostHeader(String hostHeader) {
+  public void setHostHeader(@javax.annotation.Nullable String hostHeader) {
     this.hostHeader = hostHeader;
   }
 
 
-  public OriginsResultResponse method(String method) {
+  public OriginsResultResponse method(@javax.annotation.Nullable String method) {
     this.method = method;
     return this;
   }
@@ -303,12 +320,12 @@ public class OriginsResultResponse {
     return method;
   }
 
-  public void setMethod(String method) {
+  public void setMethod(@javax.annotation.Nullable String method) {
     this.method = method;
   }
 
 
-  public OriginsResultResponse originPath(String originPath) {
+  public OriginsResultResponse originPath(@javax.annotation.Nullable String originPath) {
     this.originPath = originPath;
     return this;
   }
@@ -322,12 +339,12 @@ public class OriginsResultResponse {
     return originPath;
   }
 
-  public void setOriginPath(String originPath) {
+  public void setOriginPath(@javax.annotation.Nullable String originPath) {
     this.originPath = originPath;
   }
 
 
-  public OriginsResultResponse connectionTimeout(Long connectionTimeout) {
+  public OriginsResultResponse connectionTimeout(@javax.annotation.Nullable Long connectionTimeout) {
     this.connectionTimeout = connectionTimeout;
     return this;
   }
@@ -341,12 +358,12 @@ public class OriginsResultResponse {
     return connectionTimeout;
   }
 
-  public void setConnectionTimeout(Long connectionTimeout) {
+  public void setConnectionTimeout(@javax.annotation.Nullable Long connectionTimeout) {
     this.connectionTimeout = connectionTimeout;
   }
 
 
-  public OriginsResultResponse timeoutBetweenBytes(Long timeoutBetweenBytes) {
+  public OriginsResultResponse timeoutBetweenBytes(@javax.annotation.Nullable Long timeoutBetweenBytes) {
     this.timeoutBetweenBytes = timeoutBetweenBytes;
     return this;
   }
@@ -360,12 +377,12 @@ public class OriginsResultResponse {
     return timeoutBetweenBytes;
   }
 
-  public void setTimeoutBetweenBytes(Long timeoutBetweenBytes) {
+  public void setTimeoutBetweenBytes(@javax.annotation.Nullable Long timeoutBetweenBytes) {
     this.timeoutBetweenBytes = timeoutBetweenBytes;
   }
 
 
-  public OriginsResultResponse hmacAuthentication(Boolean hmacAuthentication) {
+  public OriginsResultResponse hmacAuthentication(@javax.annotation.Nullable Boolean hmacAuthentication) {
     this.hmacAuthentication = hmacAuthentication;
     return this;
   }
@@ -379,12 +396,12 @@ public class OriginsResultResponse {
     return hmacAuthentication;
   }
 
-  public void setHmacAuthentication(Boolean hmacAuthentication) {
+  public void setHmacAuthentication(@javax.annotation.Nullable Boolean hmacAuthentication) {
     this.hmacAuthentication = hmacAuthentication;
   }
 
 
-  public OriginsResultResponse hmacRegionName(String hmacRegionName) {
+  public OriginsResultResponse hmacRegionName(@javax.annotation.Nullable String hmacRegionName) {
     this.hmacRegionName = hmacRegionName;
     return this;
   }
@@ -398,12 +415,12 @@ public class OriginsResultResponse {
     return hmacRegionName;
   }
 
-  public void setHmacRegionName(String hmacRegionName) {
+  public void setHmacRegionName(@javax.annotation.Nullable String hmacRegionName) {
     this.hmacRegionName = hmacRegionName;
   }
 
 
-  public OriginsResultResponse hmacAccessKey(String hmacAccessKey) {
+  public OriginsResultResponse hmacAccessKey(@javax.annotation.Nullable String hmacAccessKey) {
     this.hmacAccessKey = hmacAccessKey;
     return this;
   }
@@ -417,12 +434,12 @@ public class OriginsResultResponse {
     return hmacAccessKey;
   }
 
-  public void setHmacAccessKey(String hmacAccessKey) {
+  public void setHmacAccessKey(@javax.annotation.Nullable String hmacAccessKey) {
     this.hmacAccessKey = hmacAccessKey;
   }
 
 
-  public OriginsResultResponse hmacSecretKey(String hmacSecretKey) {
+  public OriginsResultResponse hmacSecretKey(@javax.annotation.Nullable String hmacSecretKey) {
     this.hmacSecretKey = hmacSecretKey;
     return this;
   }
@@ -436,12 +453,12 @@ public class OriginsResultResponse {
     return hmacSecretKey;
   }
 
-  public void setHmacSecretKey(String hmacSecretKey) {
+  public void setHmacSecretKey(@javax.annotation.Nullable String hmacSecretKey) {
     this.hmacSecretKey = hmacSecretKey;
   }
 
 
-  public OriginsResultResponse bucket(String bucket) {
+  public OriginsResultResponse bucket(@javax.annotation.Nullable String bucket) {
     this.bucket = bucket;
     return this;
   }
@@ -455,12 +472,12 @@ public class OriginsResultResponse {
     return bucket;
   }
 
-  public void setBucket(String bucket) {
+  public void setBucket(@javax.annotation.Nullable String bucket) {
     this.bucket = bucket;
   }
 
 
-  public OriginsResultResponse prefix(String prefix) {
+  public OriginsResultResponse prefix(@javax.annotation.Nullable String prefix) {
     this.prefix = prefix;
     return this;
   }
@@ -474,7 +491,7 @@ public class OriginsResultResponse {
     return prefix;
   }
 
-  public void setPrefix(String prefix) {
+  public void setPrefix(@javax.annotation.Nullable String prefix) {
     this.prefix = prefix;
   }
 

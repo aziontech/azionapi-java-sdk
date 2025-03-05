@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,88 +49,107 @@ import org.openapitools.client.JSON;
 /**
  * CreateApplicationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class CreateApplicationRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_APPLICATION_ACCELERATION = "application_acceleration";
   @SerializedName(SERIALIZED_NAME_APPLICATION_ACCELERATION)
+  @javax.annotation.Nullable
   private Boolean applicationAcceleration;
 
   public static final String SERIALIZED_NAME_DELIVERY_PROTOCOL = "delivery_protocol";
   @SerializedName(SERIALIZED_NAME_DELIVERY_PROTOCOL)
+  @javax.annotation.Nullable
   private String deliveryProtocol;
 
   public static final String SERIALIZED_NAME_ORIGIN_TYPE = "origin_type";
   @SerializedName(SERIALIZED_NAME_ORIGIN_TYPE)
+  @javax.annotation.Nullable
   private String originType;
 
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nullable
   private String address;
 
   public static final String SERIALIZED_NAME_MINIMUM_TLS_VERSION = "minimum_tls_version";
   @SerializedName(SERIALIZED_NAME_MINIMUM_TLS_VERSION)
+  @javax.annotation.Nullable
   private String minimumTlsVersion;
 
   public static final String SERIALIZED_NAME_ORIGIN_PROTOCOL_POLICY = "origin_protocol_policy";
   @SerializedName(SERIALIZED_NAME_ORIGIN_PROTOCOL_POLICY)
+  @javax.annotation.Nullable
   private String originProtocolPolicy;
 
   public static final String SERIALIZED_NAME_HOST_HEADER = "host_header";
   @SerializedName(SERIALIZED_NAME_HOST_HEADER)
+  @javax.annotation.Nullable
   private String hostHeader;
 
   public static final String SERIALIZED_NAME_BROWSER_CACHE_SETTINGS = "browser_cache_settings";
   @SerializedName(SERIALIZED_NAME_BROWSER_CACHE_SETTINGS)
+  @javax.annotation.Nullable
   private String browserCacheSettings;
 
   public static final String SERIALIZED_NAME_CDN_CACHE_SETTINGS = "cdn_cache_settings";
   @SerializedName(SERIALIZED_NAME_CDN_CACHE_SETTINGS)
+  @javax.annotation.Nullable
   private String cdnCacheSettings;
 
   public static final String SERIALIZED_NAME_BROWSER_CACHE_SETTINGS_MAXIMUM_TTL = "browser_cache_settings_maximum_ttl";
   @SerializedName(SERIALIZED_NAME_BROWSER_CACHE_SETTINGS_MAXIMUM_TTL)
+  @javax.annotation.Nullable
   private Long browserCacheSettingsMaximumTtl;
 
   public static final String SERIALIZED_NAME_CDN_CACHE_SETTINGS_MAXIMUM_TTL = "cdn_cache_settings_maximum_ttl";
   @SerializedName(SERIALIZED_NAME_CDN_CACHE_SETTINGS_MAXIMUM_TTL)
+  @javax.annotation.Nullable
   private Long cdnCacheSettingsMaximumTtl;
 
   public static final String SERIALIZED_NAME_DEBUG_RULES = "debug_rules";
   @SerializedName(SERIALIZED_NAME_DEBUG_RULES)
+  @javax.annotation.Nullable
   private Boolean debugRules;
 
   public static final String SERIALIZED_NAME_SUPPORTED_CIPHERS = "supported_ciphers";
   @SerializedName(SERIALIZED_NAME_SUPPORTED_CIPHERS)
+  @javax.annotation.Nullable
   private String supportedCiphers;
 
   public static final String SERIALIZED_NAME_HTTP_PORT = "http_port";
   @SerializedName(SERIALIZED_NAME_HTTP_PORT)
+  @javax.annotation.Nullable
   private Object httpPort = null;
 
   public static final String SERIALIZED_NAME_HTTPS_PORT = "https_port";
   @SerializedName(SERIALIZED_NAME_HTTPS_PORT)
+  @javax.annotation.Nullable
   private Object httpsPort = null;
 
   public static final String SERIALIZED_NAME_L2_CACHING = "l2_caching";
   @SerializedName(SERIALIZED_NAME_L2_CACHING)
+  @javax.annotation.Nullable
   private Boolean l2Caching;
 
   public static final String SERIALIZED_NAME_HTTP3 = "http3";
   @SerializedName(SERIALIZED_NAME_HTTP3)
+  @javax.annotation.Nullable
   private Boolean http3;
 
   public static final String SERIALIZED_NAME_WEBSOCKET = "websocket";
   @SerializedName(SERIALIZED_NAME_WEBSOCKET)
+  @javax.annotation.Nullable
   private Boolean websocket;
 
   public CreateApplicationRequest() {
   }
 
-  public CreateApplicationRequest name(String name) {
+  public CreateApplicationRequest name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -145,12 +163,12 @@ public class CreateApplicationRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CreateApplicationRequest applicationAcceleration(Boolean applicationAcceleration) {
+  public CreateApplicationRequest applicationAcceleration(@javax.annotation.Nullable Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
     return this;
   }
@@ -164,12 +182,12 @@ public class CreateApplicationRequest {
     return applicationAcceleration;
   }
 
-  public void setApplicationAcceleration(Boolean applicationAcceleration) {
+  public void setApplicationAcceleration(@javax.annotation.Nullable Boolean applicationAcceleration) {
     this.applicationAcceleration = applicationAcceleration;
   }
 
 
-  public CreateApplicationRequest deliveryProtocol(String deliveryProtocol) {
+  public CreateApplicationRequest deliveryProtocol(@javax.annotation.Nullable String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
     return this;
   }
@@ -183,12 +201,12 @@ public class CreateApplicationRequest {
     return deliveryProtocol;
   }
 
-  public void setDeliveryProtocol(String deliveryProtocol) {
+  public void setDeliveryProtocol(@javax.annotation.Nullable String deliveryProtocol) {
     this.deliveryProtocol = deliveryProtocol;
   }
 
 
-  public CreateApplicationRequest originType(String originType) {
+  public CreateApplicationRequest originType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
     return this;
   }
@@ -202,12 +220,12 @@ public class CreateApplicationRequest {
     return originType;
   }
 
-  public void setOriginType(String originType) {
+  public void setOriginType(@javax.annotation.Nullable String originType) {
     this.originType = originType;
   }
 
 
-  public CreateApplicationRequest address(String address) {
+  public CreateApplicationRequest address(@javax.annotation.Nullable String address) {
     this.address = address;
     return this;
   }
@@ -221,12 +239,12 @@ public class CreateApplicationRequest {
     return address;
   }
 
-  public void setAddress(String address) {
+  public void setAddress(@javax.annotation.Nullable String address) {
     this.address = address;
   }
 
 
-  public CreateApplicationRequest minimumTlsVersion(String minimumTlsVersion) {
+  public CreateApplicationRequest minimumTlsVersion(@javax.annotation.Nullable String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
     return this;
   }
@@ -240,12 +258,12 @@ public class CreateApplicationRequest {
     return minimumTlsVersion;
   }
 
-  public void setMinimumTlsVersion(String minimumTlsVersion) {
+  public void setMinimumTlsVersion(@javax.annotation.Nullable String minimumTlsVersion) {
     this.minimumTlsVersion = minimumTlsVersion;
   }
 
 
-  public CreateApplicationRequest originProtocolPolicy(String originProtocolPolicy) {
+  public CreateApplicationRequest originProtocolPolicy(@javax.annotation.Nullable String originProtocolPolicy) {
     this.originProtocolPolicy = originProtocolPolicy;
     return this;
   }
@@ -259,12 +277,12 @@ public class CreateApplicationRequest {
     return originProtocolPolicy;
   }
 
-  public void setOriginProtocolPolicy(String originProtocolPolicy) {
+  public void setOriginProtocolPolicy(@javax.annotation.Nullable String originProtocolPolicy) {
     this.originProtocolPolicy = originProtocolPolicy;
   }
 
 
-  public CreateApplicationRequest hostHeader(String hostHeader) {
+  public CreateApplicationRequest hostHeader(@javax.annotation.Nullable String hostHeader) {
     this.hostHeader = hostHeader;
     return this;
   }
@@ -278,12 +296,12 @@ public class CreateApplicationRequest {
     return hostHeader;
   }
 
-  public void setHostHeader(String hostHeader) {
+  public void setHostHeader(@javax.annotation.Nullable String hostHeader) {
     this.hostHeader = hostHeader;
   }
 
 
-  public CreateApplicationRequest browserCacheSettings(String browserCacheSettings) {
+  public CreateApplicationRequest browserCacheSettings(@javax.annotation.Nullable String browserCacheSettings) {
     this.browserCacheSettings = browserCacheSettings;
     return this;
   }
@@ -297,12 +315,12 @@ public class CreateApplicationRequest {
     return browserCacheSettings;
   }
 
-  public void setBrowserCacheSettings(String browserCacheSettings) {
+  public void setBrowserCacheSettings(@javax.annotation.Nullable String browserCacheSettings) {
     this.browserCacheSettings = browserCacheSettings;
   }
 
 
-  public CreateApplicationRequest cdnCacheSettings(String cdnCacheSettings) {
+  public CreateApplicationRequest cdnCacheSettings(@javax.annotation.Nullable String cdnCacheSettings) {
     this.cdnCacheSettings = cdnCacheSettings;
     return this;
   }
@@ -316,12 +334,12 @@ public class CreateApplicationRequest {
     return cdnCacheSettings;
   }
 
-  public void setCdnCacheSettings(String cdnCacheSettings) {
+  public void setCdnCacheSettings(@javax.annotation.Nullable String cdnCacheSettings) {
     this.cdnCacheSettings = cdnCacheSettings;
   }
 
 
-  public CreateApplicationRequest browserCacheSettingsMaximumTtl(Long browserCacheSettingsMaximumTtl) {
+  public CreateApplicationRequest browserCacheSettingsMaximumTtl(@javax.annotation.Nullable Long browserCacheSettingsMaximumTtl) {
     this.browserCacheSettingsMaximumTtl = browserCacheSettingsMaximumTtl;
     return this;
   }
@@ -335,12 +353,12 @@ public class CreateApplicationRequest {
     return browserCacheSettingsMaximumTtl;
   }
 
-  public void setBrowserCacheSettingsMaximumTtl(Long browserCacheSettingsMaximumTtl) {
+  public void setBrowserCacheSettingsMaximumTtl(@javax.annotation.Nullable Long browserCacheSettingsMaximumTtl) {
     this.browserCacheSettingsMaximumTtl = browserCacheSettingsMaximumTtl;
   }
 
 
-  public CreateApplicationRequest cdnCacheSettingsMaximumTtl(Long cdnCacheSettingsMaximumTtl) {
+  public CreateApplicationRequest cdnCacheSettingsMaximumTtl(@javax.annotation.Nullable Long cdnCacheSettingsMaximumTtl) {
     this.cdnCacheSettingsMaximumTtl = cdnCacheSettingsMaximumTtl;
     return this;
   }
@@ -354,12 +372,12 @@ public class CreateApplicationRequest {
     return cdnCacheSettingsMaximumTtl;
   }
 
-  public void setCdnCacheSettingsMaximumTtl(Long cdnCacheSettingsMaximumTtl) {
+  public void setCdnCacheSettingsMaximumTtl(@javax.annotation.Nullable Long cdnCacheSettingsMaximumTtl) {
     this.cdnCacheSettingsMaximumTtl = cdnCacheSettingsMaximumTtl;
   }
 
 
-  public CreateApplicationRequest debugRules(Boolean debugRules) {
+  public CreateApplicationRequest debugRules(@javax.annotation.Nullable Boolean debugRules) {
     this.debugRules = debugRules;
     return this;
   }
@@ -373,12 +391,12 @@ public class CreateApplicationRequest {
     return debugRules;
   }
 
-  public void setDebugRules(Boolean debugRules) {
+  public void setDebugRules(@javax.annotation.Nullable Boolean debugRules) {
     this.debugRules = debugRules;
   }
 
 
-  public CreateApplicationRequest supportedCiphers(String supportedCiphers) {
+  public CreateApplicationRequest supportedCiphers(@javax.annotation.Nullable String supportedCiphers) {
     this.supportedCiphers = supportedCiphers;
     return this;
   }
@@ -392,12 +410,12 @@ public class CreateApplicationRequest {
     return supportedCiphers;
   }
 
-  public void setSupportedCiphers(String supportedCiphers) {
+  public void setSupportedCiphers(@javax.annotation.Nullable String supportedCiphers) {
     this.supportedCiphers = supportedCiphers;
   }
 
 
-  public CreateApplicationRequest httpPort(Object httpPort) {
+  public CreateApplicationRequest httpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
     return this;
   }
@@ -411,12 +429,12 @@ public class CreateApplicationRequest {
     return httpPort;
   }
 
-  public void setHttpPort(Object httpPort) {
+  public void setHttpPort(@javax.annotation.Nullable Object httpPort) {
     this.httpPort = httpPort;
   }
 
 
-  public CreateApplicationRequest httpsPort(Object httpsPort) {
+  public CreateApplicationRequest httpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
     return this;
   }
@@ -430,12 +448,12 @@ public class CreateApplicationRequest {
     return httpsPort;
   }
 
-  public void setHttpsPort(Object httpsPort) {
+  public void setHttpsPort(@javax.annotation.Nullable Object httpsPort) {
     this.httpsPort = httpsPort;
   }
 
 
-  public CreateApplicationRequest l2Caching(Boolean l2Caching) {
+  public CreateApplicationRequest l2Caching(@javax.annotation.Nullable Boolean l2Caching) {
     this.l2Caching = l2Caching;
     return this;
   }
@@ -449,12 +467,12 @@ public class CreateApplicationRequest {
     return l2Caching;
   }
 
-  public void setL2Caching(Boolean l2Caching) {
+  public void setL2Caching(@javax.annotation.Nullable Boolean l2Caching) {
     this.l2Caching = l2Caching;
   }
 
 
-  public CreateApplicationRequest http3(Boolean http3) {
+  public CreateApplicationRequest http3(@javax.annotation.Nullable Boolean http3) {
     this.http3 = http3;
     return this;
   }
@@ -468,12 +486,12 @@ public class CreateApplicationRequest {
     return http3;
   }
 
-  public void setHttp3(Boolean http3) {
+  public void setHttp3(@javax.annotation.Nullable Boolean http3) {
     this.http3 = http3;
   }
 
 
-  public CreateApplicationRequest websocket(Boolean websocket) {
+  public CreateApplicationRequest websocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
     return this;
   }
@@ -487,7 +505,7 @@ public class CreateApplicationRequest {
     return websocket;
   }
 
-  public void setWebsocket(Boolean websocket) {
+  public void setWebsocket(@javax.annotation.Nullable Boolean websocket) {
     this.websocket = websocket;
   }
 
