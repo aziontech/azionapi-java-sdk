@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**name** | **String** |  |  |
 |**edgeFunctionId** | **Long** |  |  |
-|**args** | **Object** |  |  |
+|**args** | [**ApplicationCreateInstanceRequestArgs**](ApplicationCreateInstanceRequestArgs.md) |  |  |
 
 
 

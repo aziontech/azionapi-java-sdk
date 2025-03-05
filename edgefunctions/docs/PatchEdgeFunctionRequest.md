@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**name** | **String** |  |  [optional] |
 |**code** | **String** |  |  [optional] |
-|**jsonArgs** | [**CreateEdgeFunctionRequestJsonArgs**](CreateEdgeFunctionRequestJsonArgs.md) |  |  [optional] |
+|**jsonArgs** | **Object** |  |  [optional] |
 |**active** | **Boolean** |  |  [optional] |
 |**isProprietaryCode** | **Boolean** |  |  [optional] |
 

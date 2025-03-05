@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationCacheCreateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationCacheCreateResponse {
   public static final String SERIALIZED_NAME_RESULTS = "results";
   @SerializedName(SERIALIZED_NAME_RESULTS)
+  @javax.annotation.Nullable
   private ApplicationCacheCreateResults results;
 
   public static final String SERIALIZED_NAME_SCHEMA_VERSION = "schema_version";
   @SerializedName(SERIALIZED_NAME_SCHEMA_VERSION)
+  @javax.annotation.Nullable
   private Long schemaVersion;
 
   public ApplicationCacheCreateResponse() {
   }
 
-  public ApplicationCacheCreateResponse results(ApplicationCacheCreateResults results) {
+  public ApplicationCacheCreateResponse results(@javax.annotation.Nullable ApplicationCacheCreateResults results) {
     this.results = results;
     return this;
   }
@@ -77,12 +78,12 @@ public class ApplicationCacheCreateResponse {
     return results;
   }
 
-  public void setResults(ApplicationCacheCreateResults results) {
+  public void setResults(@javax.annotation.Nullable ApplicationCacheCreateResults results) {
     this.results = results;
   }
 
 
-  public ApplicationCacheCreateResponse schemaVersion(Long schemaVersion) {
+  public ApplicationCacheCreateResponse schemaVersion(@javax.annotation.Nullable Long schemaVersion) {
     this.schemaVersion = schemaVersion;
     return this;
   }
@@ -96,7 +97,7 @@ public class ApplicationCacheCreateResponse {
     return schemaVersion;
   }
 
-  public void setSchemaVersion(Long schemaVersion) {
+  public void setSchemaVersion(@javax.annotation.Nullable Long schemaVersion) {
     this.schemaVersion = schemaVersion;
   }
 

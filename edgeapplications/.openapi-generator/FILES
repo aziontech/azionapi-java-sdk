@@ -17,6 +17,7 @@ docs/ApplicationCachePutResponse.md
 docs/ApplicationCacheResponseDetails.md
 docs/ApplicationCacheResults.md
 docs/ApplicationCreateInstanceRequest.md
+docs/ApplicationCreateInstanceRequestArgs.md
 docs/ApplicationInstanceResults.md
 docs/ApplicationInstancesGetOneResponse.md
 docs/ApplicationInstancesGetResponse.md
@@ -115,6 +116,7 @@ src/main/java/org/openapitools/client/model/ApplicationCachePutResponse.java
 src/main/java/org/openapitools/client/model/ApplicationCacheResponseDetails.java
 src/main/java/org/openapitools/client/model/ApplicationCacheResults.java
 src/main/java/org/openapitools/client/model/ApplicationCreateInstanceRequest.java
+src/main/java/org/openapitools/client/model/ApplicationCreateInstanceRequestArgs.java
 src/main/java/org/openapitools/client/model/ApplicationInstanceResults.java
 src/main/java/org/openapitools/client/model/ApplicationInstancesGetOneResponse.java
 src/main/java/org/openapitools/client/model/ApplicationInstancesGetResponse.java
@@ -162,3 +164,4 @@ src/main/java/org/openapitools/client/model/RulesEngineResultResponse.java
 src/main/java/org/openapitools/client/model/UpdateDeviceGroupsRequest.java
 src/main/java/org/openapitools/client/model/UpdateOriginsRequest.java
 src/main/java/org/openapitools/client/model/UpdateRulesEngineRequest.java
+src/test/java/org/openapitools/client/model/ApplicationCreateInstanceRequestArgsTest.java

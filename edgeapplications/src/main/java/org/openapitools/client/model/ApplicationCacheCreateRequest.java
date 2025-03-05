@@ -39,7 +39,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -51,96 +50,117 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationCacheCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationCacheCreateRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_BROWSER_CACHE_SETTINGS = "browser_cache_settings";
   @SerializedName(SERIALIZED_NAME_BROWSER_CACHE_SETTINGS)
+  @javax.annotation.Nullable
   private String browserCacheSettings;
 
   public static final String SERIALIZED_NAME_BROWSER_CACHE_SETTINGS_MAXIMUM_TTL = "browser_cache_settings_maximum_ttl";
   @SerializedName(SERIALIZED_NAME_BROWSER_CACHE_SETTINGS_MAXIMUM_TTL)
+  @javax.annotation.Nullable
   private Long browserCacheSettingsMaximumTtl;
 
   public static final String SERIALIZED_NAME_CDN_CACHE_SETTINGS = "cdn_cache_settings";
   @SerializedName(SERIALIZED_NAME_CDN_CACHE_SETTINGS)
+  @javax.annotation.Nullable
   private String cdnCacheSettings;
 
   public static final String SERIALIZED_NAME_CDN_CACHE_SETTINGS_MAXIMUM_TTL = "cdn_cache_settings_maximum_ttl";
   @SerializedName(SERIALIZED_NAME_CDN_CACHE_SETTINGS_MAXIMUM_TTL)
+  @javax.annotation.Nullable
   private Long cdnCacheSettingsMaximumTtl;
 
   public static final String SERIALIZED_NAME_CACHE_BY_QUERY_STRING = "cache_by_query_string";
   @SerializedName(SERIALIZED_NAME_CACHE_BY_QUERY_STRING)
+  @javax.annotation.Nullable
   private String cacheByQueryString;
 
   public static final String SERIALIZED_NAME_QUERY_STRING_FIELDS = "query_string_fields";
   @SerializedName(SERIALIZED_NAME_QUERY_STRING_FIELDS)
+  @javax.annotation.Nullable
   private List<String> queryStringFields = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ENABLE_QUERY_STRING_SORT = "enable_query_string_sort";
   @SerializedName(SERIALIZED_NAME_ENABLE_QUERY_STRING_SORT)
+  @javax.annotation.Nullable
   private Boolean enableQueryStringSort;
 
   public static final String SERIALIZED_NAME_CACHE_BY_COOKIES = "cache_by_cookies";
   @SerializedName(SERIALIZED_NAME_CACHE_BY_COOKIES)
+  @javax.annotation.Nullable
   private String cacheByCookies;
 
   public static final String SERIALIZED_NAME_COOKIE_NAMES = "cookie_names";
   @SerializedName(SERIALIZED_NAME_COOKIE_NAMES)
+  @javax.annotation.Nullable
   private List<String> cookieNames = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADAPTIVE_DELIVERY_ACTION = "adaptive_delivery_action";
   @SerializedName(SERIALIZED_NAME_ADAPTIVE_DELIVERY_ACTION)
+  @javax.annotation.Nullable
   private String adaptiveDeliveryAction;
 
   public static final String SERIALIZED_NAME_DEVICE_GROUP = "device_group";
   @SerializedName(SERIALIZED_NAME_DEVICE_GROUP)
+  @javax.annotation.Nullable
   private List<Integer> deviceGroup = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ENABLE_CACHING_FOR_POST = "enable_caching_for_post";
   @SerializedName(SERIALIZED_NAME_ENABLE_CACHING_FOR_POST)
+  @javax.annotation.Nullable
   private Boolean enableCachingForPost;
 
   public static final String SERIALIZED_NAME_L2_CACHING_ENABLED = "l2_caching_enabled";
   @SerializedName(SERIALIZED_NAME_L2_CACHING_ENABLED)
+  @javax.annotation.Nullable
   private Boolean l2CachingEnabled;
 
   public static final String SERIALIZED_NAME_IS_SLICE_CONFIGURATION_ENABLED = "is_slice_configuration_enabled";
   @SerializedName(SERIALIZED_NAME_IS_SLICE_CONFIGURATION_ENABLED)
+  @javax.annotation.Nullable
   private Boolean isSliceConfigurationEnabled;
 
   public static final String SERIALIZED_NAME_IS_SLICE_EDGE_CACHING_ENABLED = "is_slice_edge_caching_enabled";
   @SerializedName(SERIALIZED_NAME_IS_SLICE_EDGE_CACHING_ENABLED)
+  @javax.annotation.Nullable
   private Boolean isSliceEdgeCachingEnabled;
 
   public static final String SERIALIZED_NAME_IS_SLICE_L2_CACHING_ENABLED = "is_slice_l2_caching_enabled";
   @SerializedName(SERIALIZED_NAME_IS_SLICE_L2_CACHING_ENABLED)
+  @javax.annotation.Nullable
   private Boolean isSliceL2CachingEnabled;
 
   public static final String SERIALIZED_NAME_SLICE_CONFIGURATION_RANGE = "slice_configuration_range";
   @SerializedName(SERIALIZED_NAME_SLICE_CONFIGURATION_RANGE)
+  @javax.annotation.Nullable
   private Long sliceConfigurationRange;
 
   public static final String SERIALIZED_NAME_ENABLE_CACHING_FOR_OPTIONS = "enable_caching_for_options";
   @SerializedName(SERIALIZED_NAME_ENABLE_CACHING_FOR_OPTIONS)
+  @javax.annotation.Nullable
   private Boolean enableCachingForOptions;
 
   public static final String SERIALIZED_NAME_ENABLE_STALE_CACHE = "enable_stale_cache";
   @SerializedName(SERIALIZED_NAME_ENABLE_STALE_CACHE)
+  @javax.annotation.Nullable
   private Boolean enableStaleCache;
 
   public static final String SERIALIZED_NAME_L2_REGION = "l2_region";
   @SerializedName(SERIALIZED_NAME_L2_REGION)
+  @javax.annotation.Nullable
   private String l2Region;
 
   public ApplicationCacheCreateRequest() {
   }
 
-  public ApplicationCacheCreateRequest name(String name) {
+  public ApplicationCacheCreateRequest name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -154,12 +174,12 @@ public class ApplicationCacheCreateRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public ApplicationCacheCreateRequest browserCacheSettings(String browserCacheSettings) {
+  public ApplicationCacheCreateRequest browserCacheSettings(@javax.annotation.Nullable String browserCacheSettings) {
     this.browserCacheSettings = browserCacheSettings;
     return this;
   }
@@ -173,12 +193,12 @@ public class ApplicationCacheCreateRequest {
     return browserCacheSettings;
   }
 
-  public void setBrowserCacheSettings(String browserCacheSettings) {
+  public void setBrowserCacheSettings(@javax.annotation.Nullable String browserCacheSettings) {
     this.browserCacheSettings = browserCacheSettings;
   }
 
 
-  public ApplicationCacheCreateRequest browserCacheSettingsMaximumTtl(Long browserCacheSettingsMaximumTtl) {
+  public ApplicationCacheCreateRequest browserCacheSettingsMaximumTtl(@javax.annotation.Nullable Long browserCacheSettingsMaximumTtl) {
     this.browserCacheSettingsMaximumTtl = browserCacheSettingsMaximumTtl;
     return this;
   }
@@ -192,12 +212,12 @@ public class ApplicationCacheCreateRequest {
     return browserCacheSettingsMaximumTtl;
   }
 
-  public void setBrowserCacheSettingsMaximumTtl(Long browserCacheSettingsMaximumTtl) {
+  public void setBrowserCacheSettingsMaximumTtl(@javax.annotation.Nullable Long browserCacheSettingsMaximumTtl) {
     this.browserCacheSettingsMaximumTtl = browserCacheSettingsMaximumTtl;
   }
 
 
-  public ApplicationCacheCreateRequest cdnCacheSettings(String cdnCacheSettings) {
+  public ApplicationCacheCreateRequest cdnCacheSettings(@javax.annotation.Nullable String cdnCacheSettings) {
     this.cdnCacheSettings = cdnCacheSettings;
     return this;
   }
@@ -211,12 +231,12 @@ public class ApplicationCacheCreateRequest {
     return cdnCacheSettings;
   }
 
-  public void setCdnCacheSettings(String cdnCacheSettings) {
+  public void setCdnCacheSettings(@javax.annotation.Nullable String cdnCacheSettings) {
     this.cdnCacheSettings = cdnCacheSettings;
   }
 
 
-  public ApplicationCacheCreateRequest cdnCacheSettingsMaximumTtl(Long cdnCacheSettingsMaximumTtl) {
+  public ApplicationCacheCreateRequest cdnCacheSettingsMaximumTtl(@javax.annotation.Nullable Long cdnCacheSettingsMaximumTtl) {
     this.cdnCacheSettingsMaximumTtl = cdnCacheSettingsMaximumTtl;
     return this;
   }
@@ -230,12 +250,12 @@ public class ApplicationCacheCreateRequest {
     return cdnCacheSettingsMaximumTtl;
   }
 
-  public void setCdnCacheSettingsMaximumTtl(Long cdnCacheSettingsMaximumTtl) {
+  public void setCdnCacheSettingsMaximumTtl(@javax.annotation.Nullable Long cdnCacheSettingsMaximumTtl) {
     this.cdnCacheSettingsMaximumTtl = cdnCacheSettingsMaximumTtl;
   }
 
 
-  public ApplicationCacheCreateRequest cacheByQueryString(String cacheByQueryString) {
+  public ApplicationCacheCreateRequest cacheByQueryString(@javax.annotation.Nullable String cacheByQueryString) {
     this.cacheByQueryString = cacheByQueryString;
     return this;
   }
@@ -249,12 +269,12 @@ public class ApplicationCacheCreateRequest {
     return cacheByQueryString;
   }
 
-  public void setCacheByQueryString(String cacheByQueryString) {
+  public void setCacheByQueryString(@javax.annotation.Nullable String cacheByQueryString) {
     this.cacheByQueryString = cacheByQueryString;
   }
 
 
-  public ApplicationCacheCreateRequest queryStringFields(List<String> queryStringFields) {
+  public ApplicationCacheCreateRequest queryStringFields(@javax.annotation.Nullable List<String> queryStringFields) {
     this.queryStringFields = queryStringFields;
     return this;
   }
@@ -276,12 +296,12 @@ public class ApplicationCacheCreateRequest {
     return queryStringFields;
   }
 
-  public void setQueryStringFields(List<String> queryStringFields) {
+  public void setQueryStringFields(@javax.annotation.Nullable List<String> queryStringFields) {
     this.queryStringFields = queryStringFields;
   }
 
 
-  public ApplicationCacheCreateRequest enableQueryStringSort(Boolean enableQueryStringSort) {
+  public ApplicationCacheCreateRequest enableQueryStringSort(@javax.annotation.Nullable Boolean enableQueryStringSort) {
     this.enableQueryStringSort = enableQueryStringSort;
     return this;
   }
@@ -295,12 +315,12 @@ public class ApplicationCacheCreateRequest {
     return enableQueryStringSort;
   }
 
-  public void setEnableQueryStringSort(Boolean enableQueryStringSort) {
+  public void setEnableQueryStringSort(@javax.annotation.Nullable Boolean enableQueryStringSort) {
     this.enableQueryStringSort = enableQueryStringSort;
   }
 
 
-  public ApplicationCacheCreateRequest cacheByCookies(String cacheByCookies) {
+  public ApplicationCacheCreateRequest cacheByCookies(@javax.annotation.Nullable String cacheByCookies) {
     this.cacheByCookies = cacheByCookies;
     return this;
   }
@@ -314,12 +334,12 @@ public class ApplicationCacheCreateRequest {
     return cacheByCookies;
   }
 
-  public void setCacheByCookies(String cacheByCookies) {
+  public void setCacheByCookies(@javax.annotation.Nullable String cacheByCookies) {
     this.cacheByCookies = cacheByCookies;
   }
 
 
-  public ApplicationCacheCreateRequest cookieNames(List<String> cookieNames) {
+  public ApplicationCacheCreateRequest cookieNames(@javax.annotation.Nullable List<String> cookieNames) {
     this.cookieNames = cookieNames;
     return this;
   }
@@ -341,12 +361,12 @@ public class ApplicationCacheCreateRequest {
     return cookieNames;
   }
 
-  public void setCookieNames(List<String> cookieNames) {
+  public void setCookieNames(@javax.annotation.Nullable List<String> cookieNames) {
     this.cookieNames = cookieNames;
   }
 
 
-  public ApplicationCacheCreateRequest adaptiveDeliveryAction(String adaptiveDeliveryAction) {
+  public ApplicationCacheCreateRequest adaptiveDeliveryAction(@javax.annotation.Nullable String adaptiveDeliveryAction) {
     this.adaptiveDeliveryAction = adaptiveDeliveryAction;
     return this;
   }
@@ -360,12 +380,12 @@ public class ApplicationCacheCreateRequest {
     return adaptiveDeliveryAction;
   }
 
-  public void setAdaptiveDeliveryAction(String adaptiveDeliveryAction) {
+  public void setAdaptiveDeliveryAction(@javax.annotation.Nullable String adaptiveDeliveryAction) {
     this.adaptiveDeliveryAction = adaptiveDeliveryAction;
   }
 
 
-  public ApplicationCacheCreateRequest deviceGroup(List<Integer> deviceGroup) {
+  public ApplicationCacheCreateRequest deviceGroup(@javax.annotation.Nullable List<Integer> deviceGroup) {
     this.deviceGroup = deviceGroup;
     return this;
   }
@@ -387,12 +407,12 @@ public class ApplicationCacheCreateRequest {
     return deviceGroup;
   }
 
-  public void setDeviceGroup(List<Integer> deviceGroup) {
+  public void setDeviceGroup(@javax.annotation.Nullable List<Integer> deviceGroup) {
     this.deviceGroup = deviceGroup;
   }
 
 
-  public ApplicationCacheCreateRequest enableCachingForPost(Boolean enableCachingForPost) {
+  public ApplicationCacheCreateRequest enableCachingForPost(@javax.annotation.Nullable Boolean enableCachingForPost) {
     this.enableCachingForPost = enableCachingForPost;
     return this;
   }
@@ -406,12 +426,12 @@ public class ApplicationCacheCreateRequest {
     return enableCachingForPost;
   }
 
-  public void setEnableCachingForPost(Boolean enableCachingForPost) {
+  public void setEnableCachingForPost(@javax.annotation.Nullable Boolean enableCachingForPost) {
     this.enableCachingForPost = enableCachingForPost;
   }
 
 
-  public ApplicationCacheCreateRequest l2CachingEnabled(Boolean l2CachingEnabled) {
+  public ApplicationCacheCreateRequest l2CachingEnabled(@javax.annotation.Nullable Boolean l2CachingEnabled) {
     this.l2CachingEnabled = l2CachingEnabled;
     return this;
   }
@@ -425,12 +445,12 @@ public class ApplicationCacheCreateRequest {
     return l2CachingEnabled;
   }
 
-  public void setL2CachingEnabled(Boolean l2CachingEnabled) {
+  public void setL2CachingEnabled(@javax.annotation.Nullable Boolean l2CachingEnabled) {
     this.l2CachingEnabled = l2CachingEnabled;
   }
 
 
-  public ApplicationCacheCreateRequest isSliceConfigurationEnabled(Boolean isSliceConfigurationEnabled) {
+  public ApplicationCacheCreateRequest isSliceConfigurationEnabled(@javax.annotation.Nullable Boolean isSliceConfigurationEnabled) {
     this.isSliceConfigurationEnabled = isSliceConfigurationEnabled;
     return this;
   }
@@ -444,12 +464,12 @@ public class ApplicationCacheCreateRequest {
     return isSliceConfigurationEnabled;
   }
 
-  public void setIsSliceConfigurationEnabled(Boolean isSliceConfigurationEnabled) {
+  public void setIsSliceConfigurationEnabled(@javax.annotation.Nullable Boolean isSliceConfigurationEnabled) {
     this.isSliceConfigurationEnabled = isSliceConfigurationEnabled;
   }
 
 
-  public ApplicationCacheCreateRequest isSliceEdgeCachingEnabled(Boolean isSliceEdgeCachingEnabled) {
+  public ApplicationCacheCreateRequest isSliceEdgeCachingEnabled(@javax.annotation.Nullable Boolean isSliceEdgeCachingEnabled) {
     this.isSliceEdgeCachingEnabled = isSliceEdgeCachingEnabled;
     return this;
   }
@@ -463,12 +483,12 @@ public class ApplicationCacheCreateRequest {
     return isSliceEdgeCachingEnabled;
   }
 
-  public void setIsSliceEdgeCachingEnabled(Boolean isSliceEdgeCachingEnabled) {
+  public void setIsSliceEdgeCachingEnabled(@javax.annotation.Nullable Boolean isSliceEdgeCachingEnabled) {
     this.isSliceEdgeCachingEnabled = isSliceEdgeCachingEnabled;
   }
 
 
-  public ApplicationCacheCreateRequest isSliceL2CachingEnabled(Boolean isSliceL2CachingEnabled) {
+  public ApplicationCacheCreateRequest isSliceL2CachingEnabled(@javax.annotation.Nullable Boolean isSliceL2CachingEnabled) {
     this.isSliceL2CachingEnabled = isSliceL2CachingEnabled;
     return this;
   }
@@ -482,12 +502,12 @@ public class ApplicationCacheCreateRequest {
     return isSliceL2CachingEnabled;
   }
 
-  public void setIsSliceL2CachingEnabled(Boolean isSliceL2CachingEnabled) {
+  public void setIsSliceL2CachingEnabled(@javax.annotation.Nullable Boolean isSliceL2CachingEnabled) {
     this.isSliceL2CachingEnabled = isSliceL2CachingEnabled;
   }
 
 
-  public ApplicationCacheCreateRequest sliceConfigurationRange(Long sliceConfigurationRange) {
+  public ApplicationCacheCreateRequest sliceConfigurationRange(@javax.annotation.Nullable Long sliceConfigurationRange) {
     this.sliceConfigurationRange = sliceConfigurationRange;
     return this;
   }
@@ -501,12 +521,12 @@ public class ApplicationCacheCreateRequest {
     return sliceConfigurationRange;
   }
 
-  public void setSliceConfigurationRange(Long sliceConfigurationRange) {
+  public void setSliceConfigurationRange(@javax.annotation.Nullable Long sliceConfigurationRange) {
     this.sliceConfigurationRange = sliceConfigurationRange;
   }
 
 
-  public ApplicationCacheCreateRequest enableCachingForOptions(Boolean enableCachingForOptions) {
+  public ApplicationCacheCreateRequest enableCachingForOptions(@javax.annotation.Nullable Boolean enableCachingForOptions) {
     this.enableCachingForOptions = enableCachingForOptions;
     return this;
   }
@@ -520,12 +540,12 @@ public class ApplicationCacheCreateRequest {
     return enableCachingForOptions;
   }
 
-  public void setEnableCachingForOptions(Boolean enableCachingForOptions) {
+  public void setEnableCachingForOptions(@javax.annotation.Nullable Boolean enableCachingForOptions) {
     this.enableCachingForOptions = enableCachingForOptions;
   }
 
 
-  public ApplicationCacheCreateRequest enableStaleCache(Boolean enableStaleCache) {
+  public ApplicationCacheCreateRequest enableStaleCache(@javax.annotation.Nullable Boolean enableStaleCache) {
     this.enableStaleCache = enableStaleCache;
     return this;
   }
@@ -539,12 +559,12 @@ public class ApplicationCacheCreateRequest {
     return enableStaleCache;
   }
 
-  public void setEnableStaleCache(Boolean enableStaleCache) {
+  public void setEnableStaleCache(@javax.annotation.Nullable Boolean enableStaleCache) {
     this.enableStaleCache = enableStaleCache;
   }
 
 
-  public ApplicationCacheCreateRequest l2Region(String l2Region) {
+  public ApplicationCacheCreateRequest l2Region(@javax.annotation.Nullable String l2Region) {
     this.l2Region = l2Region;
     return this;
   }
@@ -558,7 +578,7 @@ public class ApplicationCacheCreateRequest {
     return l2Region;
   }
 
-  public void setL2Region(String l2Region) {
+  public void setL2Region(@javax.annotation.Nullable String l2Region) {
     this.l2Region = l2Region;
   }
 

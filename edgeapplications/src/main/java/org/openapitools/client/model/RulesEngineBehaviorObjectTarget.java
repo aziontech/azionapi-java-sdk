@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * RulesEngineBehaviorObjectTarget
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class RulesEngineBehaviorObjectTarget {
   public static final String SERIALIZED_NAME_CAPTURED_ARRAY = "captured_array";
   @SerializedName(SERIALIZED_NAME_CAPTURED_ARRAY)
+  @javax.annotation.Nullable
   private String capturedArray;
 
   public static final String SERIALIZED_NAME_SUBJECT = "subject";
   @SerializedName(SERIALIZED_NAME_SUBJECT)
+  @javax.annotation.Nullable
   private String subject;
 
   public static final String SERIALIZED_NAME_REGEX = "regex";
   @SerializedName(SERIALIZED_NAME_REGEX)
+  @javax.annotation.Nullable
   private String regex;
 
   public RulesEngineBehaviorObjectTarget() {
   }
 
-  public RulesEngineBehaviorObjectTarget capturedArray(String capturedArray) {
+  public RulesEngineBehaviorObjectTarget capturedArray(@javax.annotation.Nullable String capturedArray) {
     this.capturedArray = capturedArray;
     return this;
   }
@@ -80,12 +82,12 @@ public class RulesEngineBehaviorObjectTarget {
     return capturedArray;
   }
 
-  public void setCapturedArray(String capturedArray) {
+  public void setCapturedArray(@javax.annotation.Nullable String capturedArray) {
     this.capturedArray = capturedArray;
   }
 
 
-  public RulesEngineBehaviorObjectTarget subject(String subject) {
+  public RulesEngineBehaviorObjectTarget subject(@javax.annotation.Nullable String subject) {
     this.subject = subject;
     return this;
   }
@@ -99,12 +101,12 @@ public class RulesEngineBehaviorObjectTarget {
     return subject;
   }
 
-  public void setSubject(String subject) {
+  public void setSubject(@javax.annotation.Nullable String subject) {
     this.subject = subject;
   }
 
 
-  public RulesEngineBehaviorObjectTarget regex(String regex) {
+  public RulesEngineBehaviorObjectTarget regex(@javax.annotation.Nullable String regex) {
     this.regex = regex;
     return this;
   }
@@ -118,7 +120,7 @@ public class RulesEngineBehaviorObjectTarget {
     return regex;
   }
 
-  public void setRegex(String regex) {
+  public void setRegex(@javax.annotation.Nullable String regex) {
     this.regex = regex;
   }
 

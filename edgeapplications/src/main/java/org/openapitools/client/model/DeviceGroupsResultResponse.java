@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * DeviceGroupsResultResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class DeviceGroupsResultResponse {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private Long id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_USER_AGENT = "user_agent";
   @SerializedName(SERIALIZED_NAME_USER_AGENT)
+  @javax.annotation.Nonnull
   private String userAgent;
 
   public DeviceGroupsResultResponse() {
   }
 
-  public DeviceGroupsResultResponse id(Long id) {
+  public DeviceGroupsResultResponse id(@javax.annotation.Nullable Long id) {
     this.id = id;
     return this;
   }
@@ -80,12 +82,12 @@ public class DeviceGroupsResultResponse {
     return id;
   }
 
-  public void setId(Long id) {
+  public void setId(@javax.annotation.Nullable Long id) {
     this.id = id;
   }
 
 
-  public DeviceGroupsResultResponse name(String name) {
+  public DeviceGroupsResultResponse name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +101,12 @@ public class DeviceGroupsResultResponse {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public DeviceGroupsResultResponse userAgent(String userAgent) {
+  public DeviceGroupsResultResponse userAgent(@javax.annotation.Nonnull String userAgent) {
     this.userAgent = userAgent;
     return this;
   }
@@ -118,7 +120,7 @@ public class DeviceGroupsResultResponse {
     return userAgent;
   }
 
-  public void setUserAgent(String userAgent) {
+  public void setUserAgent(@javax.annotation.Nonnull String userAgent) {
     this.userAgent = userAgent;
   }
 

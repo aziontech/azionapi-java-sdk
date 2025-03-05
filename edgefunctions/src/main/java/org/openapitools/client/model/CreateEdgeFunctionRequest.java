@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateEdgeFunctionRequestJsonArgs;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateEdgeFunctionRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-28T19:46:05.532458Z[GMT]", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:17.470734Z[GMT]", comments = "Generator version: 7.12.0")
 public class CreateEdgeFunctionRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -69,7 +69,7 @@ public class CreateEdgeFunctionRequest {
   public static final String SERIALIZED_NAME_JSON_ARGS = "json_args";
   @SerializedName(SERIALIZED_NAME_JSON_ARGS)
   @javax.annotation.Nullable
-  private CreateEdgeFunctionRequestJsonArgs jsonArgs;
+  private Object jsonArgs = null;
 
   /**
    * Gets or Sets initiatorType
@@ -198,7 +198,7 @@ public class CreateEdgeFunctionRequest {
   }
 
 
-  public CreateEdgeFunctionRequest jsonArgs(@javax.annotation.Nullable CreateEdgeFunctionRequestJsonArgs jsonArgs) {
+  public CreateEdgeFunctionRequest jsonArgs(@javax.annotation.Nullable Object jsonArgs) {
     this.jsonArgs = jsonArgs;
     return this;
   }
@@ -208,11 +208,11 @@ public class CreateEdgeFunctionRequest {
    * @return jsonArgs
    */
   @javax.annotation.Nullable
-  public CreateEdgeFunctionRequestJsonArgs getJsonArgs() {
+  public Object getJsonArgs() {
     return jsonArgs;
   }
 
-  public void setJsonArgs(@javax.annotation.Nullable CreateEdgeFunctionRequestJsonArgs jsonArgs) {
+  public void setJsonArgs(@javax.annotation.Nullable Object jsonArgs) {
     this.jsonArgs = jsonArgs;
   }
 
@@ -293,9 +293,20 @@ public class CreateEdgeFunctionRequest {
         Objects.equals(this.isProprietaryCode, createEdgeFunctionRequest.isProprietaryCode);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(name, language, code, jsonArgs, initiatorType, active, isProprietaryCode);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -372,10 +383,6 @@ public class CreateEdgeFunctionRequest {
       }
       if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));
-      }
-      // validate the optional field `json_args`
-      if (jsonObj.get("json_args") != null && !jsonObj.get("json_args").isJsonNull()) {
-        CreateEdgeFunctionRequestJsonArgs.validateJsonElement(jsonObj.get("json_args"));
       }
       if ((jsonObj.get("initiator_type") != null && !jsonObj.get("initiator_type").isJsonNull()) && !jsonObj.get("initiator_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `initiator_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("initiator_type").toString()));

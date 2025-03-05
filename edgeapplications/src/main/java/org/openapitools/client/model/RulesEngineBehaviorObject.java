@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * RulesEngineBehaviorObject
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class RulesEngineBehaviorObject {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
+  @javax.annotation.Nonnull
   private RulesEngineBehaviorObjectTarget target;
 
   public RulesEngineBehaviorObject() {
   }
 
-  public RulesEngineBehaviorObject name(String name) {
+  public RulesEngineBehaviorObject name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -77,12 +78,12 @@ public class RulesEngineBehaviorObject {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public RulesEngineBehaviorObject target(RulesEngineBehaviorObjectTarget target) {
+  public RulesEngineBehaviorObject target(@javax.annotation.Nonnull RulesEngineBehaviorObjectTarget target) {
     this.target = target;
     return this;
   }
@@ -96,7 +97,7 @@ public class RulesEngineBehaviorObject {
     return target;
   }
 
-  public void setTarget(RulesEngineBehaviorObjectTarget target) {
+  public void setTarget(@javax.annotation.Nonnull RulesEngineBehaviorObjectTarget target) {
     this.target = target;
   }
 

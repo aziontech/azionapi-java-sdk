@@ -37,7 +37,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -49,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationLinks
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationLinks {
   public static final String SERIALIZED_NAME_PREVIOUS = "previous";
   @SerializedName(SERIALIZED_NAME_PREVIOUS)
+  @javax.annotation.Nullable
   private String previous;
 
   public static final String SERIALIZED_NAME_NEXT = "next";
   @SerializedName(SERIALIZED_NAME_NEXT)
+  @javax.annotation.Nullable
   private String next;
 
   public ApplicationLinks() {
   }
 
-  public ApplicationLinks previous(String previous) {
+  public ApplicationLinks previous(@javax.annotation.Nullable String previous) {
     this.previous = previous;
     return this;
   }
@@ -76,12 +77,12 @@ public class ApplicationLinks {
     return previous;
   }
 
-  public void setPrevious(String previous) {
+  public void setPrevious(@javax.annotation.Nullable String previous) {
     this.previous = previous;
   }
 
 
-  public ApplicationLinks next(String next) {
+  public ApplicationLinks next(@javax.annotation.Nullable String next) {
     this.next = next;
     return this;
   }
@@ -95,7 +96,7 @@ public class ApplicationLinks {
     return next;
   }
 
-  public void setNext(String next) {
+  public void setNext(@javax.annotation.Nullable String next) {
     this.next = next;
   }
 

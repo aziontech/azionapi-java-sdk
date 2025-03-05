@@ -41,7 +41,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * DeviceGroupsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class DeviceGroupsResponse {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
+  @javax.annotation.Nonnull
   private Long count;
 
   public static final String SERIALIZED_NAME_TOTAL_PAGES = "total_pages";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAGES)
+  @javax.annotation.Nonnull
   private Long totalPages;
 
   public static final String SERIALIZED_NAME_SCHEMA_VERSION = "schema_version";
   @SerializedName(SERIALIZED_NAME_SCHEMA_VERSION)
+  @javax.annotation.Nonnull
   private Long schemaVersion;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nonnull
   private DeviceGroupsResponseLinks links;
 
   public static final String SERIALIZED_NAME_RESULTS = "results";
   @SerializedName(SERIALIZED_NAME_RESULTS)
+  @javax.annotation.Nonnull
   private List<DeviceGroupsResultResponse> results = new ArrayList<>();
 
   public DeviceGroupsResponse() {
   }
 
-  public DeviceGroupsResponse count(Long count) {
+  public DeviceGroupsResponse count(@javax.annotation.Nonnull Long count) {
     this.count = count;
     return this;
   }
@@ -92,12 +96,12 @@ public class DeviceGroupsResponse {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(@javax.annotation.Nonnull Long count) {
     this.count = count;
   }
 
 
-  public DeviceGroupsResponse totalPages(Long totalPages) {
+  public DeviceGroupsResponse totalPages(@javax.annotation.Nonnull Long totalPages) {
     this.totalPages = totalPages;
     return this;
   }
@@ -111,12 +115,12 @@ public class DeviceGroupsResponse {
     return totalPages;
   }
 
-  public void setTotalPages(Long totalPages) {
+  public void setTotalPages(@javax.annotation.Nonnull Long totalPages) {
     this.totalPages = totalPages;
   }
 
 
-  public DeviceGroupsResponse schemaVersion(Long schemaVersion) {
+  public DeviceGroupsResponse schemaVersion(@javax.annotation.Nonnull Long schemaVersion) {
     this.schemaVersion = schemaVersion;
     return this;
   }
@@ -130,12 +134,12 @@ public class DeviceGroupsResponse {
     return schemaVersion;
   }
 
-  public void setSchemaVersion(Long schemaVersion) {
+  public void setSchemaVersion(@javax.annotation.Nonnull Long schemaVersion) {
     this.schemaVersion = schemaVersion;
   }
 
 
-  public DeviceGroupsResponse links(DeviceGroupsResponseLinks links) {
+  public DeviceGroupsResponse links(@javax.annotation.Nonnull DeviceGroupsResponseLinks links) {
     this.links = links;
     return this;
   }
@@ -149,12 +153,12 @@ public class DeviceGroupsResponse {
     return links;
   }
 
-  public void setLinks(DeviceGroupsResponseLinks links) {
+  public void setLinks(@javax.annotation.Nonnull DeviceGroupsResponseLinks links) {
     this.links = links;
   }
 
 
-  public DeviceGroupsResponse results(List<DeviceGroupsResultResponse> results) {
+  public DeviceGroupsResponse results(@javax.annotation.Nonnull List<DeviceGroupsResultResponse> results) {
     this.results = results;
     return this;
   }
@@ -176,7 +180,7 @@ public class DeviceGroupsResponse {
     return results;
   }
 
-  public void setResults(List<DeviceGroupsResultResponse> results) {
+  public void setResults(@javax.annotation.Nonnull List<DeviceGroupsResultResponse> results) {
     this.results = results;
   }
 

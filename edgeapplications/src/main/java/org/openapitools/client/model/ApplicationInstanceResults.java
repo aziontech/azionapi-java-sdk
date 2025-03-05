@@ -38,7 +38,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -50,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * ApplicationInstanceResults
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-12T18:12:04.014507Z[GMT]", comments = "Generator version: 7.7.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-05T18:30:12.901597Z[GMT]", comments = "Generator version: 7.12.0")
 public class ApplicationInstanceResults {
   public static final String SERIALIZED_NAME_SCHEMA_VERSION = "schema_version";
   @SerializedName(SERIALIZED_NAME_SCHEMA_VERSION)
+  @javax.annotation.Nullable
   private Long schemaVersion;
 
   public static final String SERIALIZED_NAME_RESULTS = "results";
   @SerializedName(SERIALIZED_NAME_RESULTS)
+  @javax.annotation.Nullable
   private ApplicationInstancesResults results;
 
   public ApplicationInstanceResults() {
   }
 
-  public ApplicationInstanceResults schemaVersion(Long schemaVersion) {
+  public ApplicationInstanceResults schemaVersion(@javax.annotation.Nullable Long schemaVersion) {
     this.schemaVersion = schemaVersion;
     return this;
   }
@@ -77,12 +78,12 @@ public class ApplicationInstanceResults {
     return schemaVersion;
   }
 
-  public void setSchemaVersion(Long schemaVersion) {
+  public void setSchemaVersion(@javax.annotation.Nullable Long schemaVersion) {
     this.schemaVersion = schemaVersion;
   }
 
 
-  public ApplicationInstanceResults results(ApplicationInstancesResults results) {
+  public ApplicationInstanceResults results(@javax.annotation.Nullable ApplicationInstancesResults results) {
     this.results = results;
     return this;
   }
@@ -96,7 +97,7 @@ public class ApplicationInstanceResults {
     return results;
   }
 
-  public void setResults(ApplicationInstancesResults results) {
+  public void setResults(@javax.annotation.Nullable ApplicationInstancesResults results) {
     this.results = results;
   }
 
