@@ -36,6 +36,14 @@ function documentedEndpoints(pkg: string) {
   )
 }
 
+// API classes left in the source tree by an older generation: they still compile but are
+// no longer in the package README (the current generator output). Pinned so that a
+// regeneration that removes them, or a new undocumented class, makes the suite fail.
+const KNOWN_UNDOCUMENTED: Record<string, string[]> = {
+  storage: ['BucketsApi'],
+  variables: ['ApiApi'],
+}
+
 describe('generated packages', () => {
   it('finds every package of the SDK', () => {
     expect(PACKAGES.length).toBeGreaterThanOrEqual(18)
@@ -43,14 +51,17 @@ describe('generated packages', () => {
 
   describe.each(PACKAGES)('%s', (pkg) => {
     it('compiles and maps every documented endpoint to the right HTTP verb and route', async () => {
-      const { basePath, routes } = await probe(pkg, 'routes', ...apiClasses(pkg))
+      const documented = documentedEndpoints(pkg)
+      expect(documented.length).toBeGreaterThan(0)
+      const documentedClasses = new Set(documented.map((e) => e.split('.')[0]))
+      const undocumented = apiClasses(pkg).filter((c) => !documentedClasses.has(c))
+      expect(undocumented.sort()).toEqual(KNOWN_UNDOCUMENTED[pkg] ?? [])
+      const { basePath, routes } = await probe(pkg, 'routes', ...documentedClasses)
       expect(basePath).toMatch(/^https?:\/\//)
       const prefix = new URL(basePath).pathname.replace(/\/$/, '')
       const generated = (routes as { className: string; name: string; method: string; path: string }[]).map(
         (r) => `${r.className}.${r.name} ${r.method} ${normalize(r.path.slice(prefix.length))}`,
       )
-      const documented = documentedEndpoints(pkg)
-      expect(documented.length).toBeGreaterThan(0)
       expect(generated.sort()).toEqual(documented.sort())
     })
   })
@@ -104,13 +115,13 @@ describe('HTTP round trip against a local API double', () => {
   })
 
   it('variables: list returns typed Variable objects', async () => {
-    const variable = { uuid: 'a1', key: 'API_URL', value: 'https://example.test', secret: false, last_editor: 'ci', created_at: '2026-01-01T00:00:00Z', updated_at: '2026-01-01T00:00:00Z' }
+    const variable = { uuid: '0b1e8a52-0000-4000-8000-0000000000a1', key: 'API_URL', value: 'https://example.test', secret: false, last_editor: 'ci', created_at: '2026-01-01T00:00:00Z', updated_at: '2026-01-01T00:00:00Z' }
     responses.set('GET /variables', { status: 200, body: [variable] })
     const { result, request } = await call('variables', 'VariablesApi', 'apiVariablesList', [])
     expect(request.headers.authorization).toBe('Token test-token')
     expect(result.error).toBeNull()
     expect(result.data).toHaveLength(1)
-    expect(result.data[0]).toMatchObject({ uuid: 'a1', key: 'API_URL', value: 'https://example.test', secret: false })
+    expect(result.data[0]).toMatchObject({ uuid: '0b1e8a52-0000-4000-8000-0000000000a1', key: 'API_URL', value: 'https://example.test', secret: false })
   })
 
   it('domains: POST serializes the JSON body and sends the versioned headers', async () => {
